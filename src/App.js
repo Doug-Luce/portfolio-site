@@ -22,8 +22,9 @@
 
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import styled, { css } from 'styled-components'
 
-const BasicExample = () => (
+const App = () => (
   <Router>
     <div>
       <ul>
@@ -47,10 +48,24 @@ const BasicExample = () => (
   </Router>
 );
 
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+`;
+
+// Create a Wrapper component that'll render a <section> tag with some styles
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
+
 const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
+  <Wrapper>
+    <Title>
+      Hello World, this is my first styled component!
+    </Title>
+  </Wrapper>
 );
 
 const About = () => (
@@ -89,4 +104,4 @@ const Topic = ({ match }) => (
   </div>
 );
 
-export default BasicExample;
+export default App;
