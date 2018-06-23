@@ -4,7 +4,11 @@ import NavStyles from './styles/NavStyles';
 class NavBar extends React.Component {
   render() {
     return (
-      <NavStyles />
+      <NavStyles>
+      <h4>Douglas Luce</h4>
+      {/* <NavLinks />
+      <LetsChat /> */}
+      </NavStyles>
     );
   }
 };
