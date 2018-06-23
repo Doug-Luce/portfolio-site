@@ -6,4 +6,6 @@ const NavStyles = styled.nav`
   background-image: ${palette.navGradient};
 `;
 
+//Test comment for Git
+
 export default NavStyles;
