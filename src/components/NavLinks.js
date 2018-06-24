@@ -1,24 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
+import Home from '../pages/home';
 
 export const NavLinks = () => {
   return (
-  <Router>
     <ul>
         <li>
-          HOME
+          <NavLink exact={true} to="/">HOME</NavLink>
         </li>
         <li>
-          ABOUT
+          <NavLink to ="/about">ABOUT</NavLink>
         </li>
         <li>
-          PROJECTS
+          <NavLink to="/projects">PROJECTS</NavLink>
         </li>
         <li>
-          CONTACT
+          <NavLink to ="/contact">CONTACT</NavLink>
         </li>
     </ul>
-  </Router>
+
   );
 };
 

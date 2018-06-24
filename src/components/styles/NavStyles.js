@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import * as palette from '../color';
 import media from 'styled-media-query';
 
+
 const NavStyles = styled.nav`
   align-items: center;
   height: 3.5rem;
@@ -9,6 +10,26 @@ const NavStyles = styled.nav`
   display: flex;
   justify-content: space-between;
   min-width: 375px;
+
+  #logo:hover {
+    text-shadow:none;
+    background-image: none;
+  }
+
+  a {
+    color: ${palette.lightCream};
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-shadow: 2px 2px 10px ${palette.black};
+    background-image: linear-gradient(120deg, #F88D35 0%, #32A2BB 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    padding-bottom: 6px;
+  }
 
   h4 {
     color: ${palette.lightCream};
@@ -34,6 +55,14 @@ const NavStyles = styled.nav`
     text-align: center;
   }
 
+  .active {
+    background-image: linear-gradient(120deg, #F88D35 0%, #32A2BB 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    padding-bottom: 6px;
+  }
+
   .chat-button {
     background-color: ${palette.mediumBlue};
     border-radius: 1px;
@@ -53,7 +82,8 @@ const NavStyles = styled.nav`
 
   img {
     display: none;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     min-width: 50px;
   }
 
@@ -64,6 +94,7 @@ const NavStyles = styled.nav`
     }
     .chat-button {
       min-width: 5rem;
+      margin-right: 0;
     }
     ul {
       display: none;
