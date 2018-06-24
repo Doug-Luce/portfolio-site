@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavLinks = () => {
   return (
-    <ul>
+    <ul className="nav-links">
         <li>
           <NavLink exact={true} to="/">HOME</NavLink>
         </li>

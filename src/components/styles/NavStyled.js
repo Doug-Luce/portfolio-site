@@ -43,7 +43,7 @@ const NavStyles = styled.nav`
     margin: .5rem;
   }
 
-  ul {
+  ul.nav-links {
     color: ${palette.lightCream};
     display: flex;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
@@ -73,6 +73,7 @@ const NavStyles = styled.nav`
     height: 100%;
     width: 5rem;
     text-align: center;
+    z-index: 2;
   }
 
   .chat-button p {
@@ -96,7 +97,7 @@ const NavStyles = styled.nav`
       min-width: 5rem;
       margin-right: 0;
     }
-    ul {
+    ul.nav-links {
       display: none;
     }
 

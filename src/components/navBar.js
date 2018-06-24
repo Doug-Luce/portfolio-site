@@ -1,9 +1,10 @@
 import React from 'react';
-import NavStyles from './styles/NavStyles';
+import NavStyles from './styles/NavStyled';
 import NavLinks from './NavLinks';
 import ChatButton from './ChatButton';
 import Hamburger from './Hamburger';
-import Menu from './Menu';
+import Menu from './styles/MenuStyled';
+import MenuItems from './MenuItems';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -16,9 +17,8 @@ class NavBar extends React.Component {
     this.setState(prevState => ({
       toggle: !prevState.toggle
     }));
-    console.log('clicked');
   };
-
+// TODO Add a way to close the menu if the screen width gets bigger than 768 pixels
   render() {
     return (
       <NavStyles>
@@ -26,7 +26,7 @@ class NavBar extends React.Component {
           <NavLinks />
         <ChatButton />
         <Hamburger toggle={this.state.toggle} onClick={this.handleClick} />
-        {this.state.toggle ? <Menu /> : <Menu open="true" />}
+        {this.state.toggle ? <Menu /> : <Menu open="true"><MenuItems /></Menu>}
       </NavStyles>
     );
   }
