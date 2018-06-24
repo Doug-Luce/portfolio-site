@@ -11,9 +11,9 @@ const Menu = styled.div`
   left: 0;
   position: fixed;
   top: 3.5rem;
+  /* This will hide the slideout menu or show it depending on the state passed in as props */
   transform: ${props => props.open ? 'translate3d(-20vw, 0, 0);' : 'translate3d(-100vw, 0, 0);'};
   width: 100vw;
 `;
-
 
 export default Menu;

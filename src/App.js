@@ -4,10 +4,14 @@ import NavBar from './components/NavBar';
 import baseStyles from './baseStyles';
 import Home from './pages/home';
 
+
+// Placeholder pages for testing the Routes
 const About = () => <div>About Page</div>;
 const Projects = () => <div>Projects Page</div>;
 const Contact = () => <div>Contact Page</div>;
 
+
+// MainLayout is a component that contains all of the layout. It loads the necessary components for a page.
 const MainLayout = () => (
   <main>
     <NavBar />
@@ -19,6 +23,9 @@ const MainLayout = () => (
   </main>
 );
 
+
+// App renders the Mainlayout component inside of a Router component.
+// The baseStyles() function is for giving a set of global css values.
 const App = () => {
   baseStyles()
   return (

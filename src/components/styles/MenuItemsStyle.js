@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import * as palette from '../color';
 
+
+// TODO Align icons and menu items
 const MenuItemStyle = styled.div`
     color: ${palette.lightCream};
     display: flex;
@@ -48,32 +50,6 @@ const MenuItemStyle = styled.div`
       background-size: 1.3em;
       padding-left: 15px;
     }
-
-    #home {
-      position: fixed;
-      top: 130px;
-      left: 212px;
-    }
-
-    #about {
-      position: fixed;
-      top: 190px;
-      left: 212px;
-    }
-
-    #projects {
-      position: fixed;
-      top: 250px;
-      left: 212px;
-    }
-
-    #contact {
-      position: fixed;
-      top: 320px;
-      left: 212px;
-    }
-
-
 `;
 
 

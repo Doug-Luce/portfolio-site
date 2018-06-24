@@ -1,3 +1,5 @@
+// Theme colors for Dougluce.com
+
 export const mediumCream = '#F7EEE3';
 export const lightCream =  '#FFECD4';
 export const lightBlue =   '#32A2BB';

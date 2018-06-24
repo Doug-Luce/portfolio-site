@@ -13,6 +13,7 @@ class NavBar extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
+  // Turns off and on the hamburger menu.
   handleClick() {
     this.setState(prevState => ({
       toggle: !prevState.toggle
@@ -22,9 +23,11 @@ class NavBar extends React.Component {
   render() {
     return (
       <NavStyles>
+
         <h4><a id="logo" href="/">Douglas Luce <br />Software Developer</a></h4>
           <NavLinks />
         <ChatButton />
+        {/* Pass the Hamburger component the toggle state and the click handler */}
         <Hamburger toggle={this.state.toggle} onClick={this.handleClick} />
         {this.state.toggle ? <Menu /> : <Menu open="true"><MenuItems /></Menu>}
       </NavStyles>
