@@ -2,8 +2,10 @@ import React from 'react';
 import NavStyles from './styles/NavStyles';
 import NavLinks from './NavLinks';
 import ChatButton from './ChatButton';
+import Hamburger from './Hamburger';
+import Menu from './Menu';
 
-class Hamburger extends React.Component {
+class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {toggle: true};
@@ -14,23 +16,17 @@ class Hamburger extends React.Component {
     this.setState(prevState => ({
       toggle: !prevState.toggle
     }));
-  }
+    console.log('clicked');
+  };
 
-  render() {
-    return (
-      this.state.toggle ? <img onClick={this.handleClick} alt="hamburger menu icon" src="http://res.cloudinary.com/lucedesign/image/upload/v1529802602/hamburger_tfga5b.svg" /> : <img onClick={this.handleClick} alt="close menu icon" src="http://res.cloudinary.com/lucedesign/image/upload/v1529821228/close_k83kph.svg" />
-    );
-  }
-};
-
-class NavBar extends React.Component {
   render() {
     return (
       <NavStyles>
         <h4><a id="logo" href="/">Douglas Luce <br />Software Developer</a></h4>
           <NavLinks />
         <ChatButton />
-        <Hamburger />
+        <Hamburger toggle={this.state.toggle} onClick={this.handleClick} />
+        {this.state.toggle ? <Menu /> : <Menu open="true" />}
       </NavStyles>
     );
   }
