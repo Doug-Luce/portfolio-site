@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import * as palette from '../color';
 import media from 'styled-media-query';
 
-
 const NavStyles = styled.nav`
   align-items: center;
   height: 3.5rem;
@@ -82,6 +81,7 @@ const NavStyles = styled.nav`
 
   img {
     display: none;
+    height: 30px;
     margin-left: auto;
     margin-right: auto;
     min-width: 50px;
@@ -109,6 +109,9 @@ const NavStyles = styled.nav`
     /* screen width is between 768px (medium) and 1170px (large) */
     .chat-button {
       margin-left: 5rem;
+    }
+    img {
+      margin-right: 5%;
     }
   `}
 
