@@ -9,9 +9,7 @@ class NavBar extends React.Component {
     return (
       <NavStyles>
         <h4><a id="logo" href="/">Douglas Luce <br />Software Developer</a></h4>
-          <Router>
-            <NavLinks />
-          </Router>
+          <NavLinks />
         <ChatButton />
         <img src="http://res.cloudinary.com/lucedesign/image/upload/v1529802602/hamburger_tfga5b.svg" />
       </NavStyles>
