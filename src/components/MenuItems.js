@@ -7,10 +7,10 @@ class MenuItems extends React.Component {
     return(
       <MenuItemsStyle>
         <ul>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>PROJECTS</li>
-          <li>CONTACT</li>
+          <li class="home"><span id="home">HOME</span></li>
+          <li class="about"><span id="about">ABOUT</span></li>
+          <li class="projects"><span id="projects">PROJECTS</span></li>
+          <li class="contact"><span id="contact">CONTACT</span></li>
         </ul>
       </MenuItemsStyle>
     );

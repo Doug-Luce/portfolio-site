@@ -9,8 +9,71 @@ const MenuItemStyle = styled.div`
     line-height: 3.5rem;
     list-style-type: none;
     margin-left: 20vw;
-    margin-top:6rem;
+    margin-top:8rem;
     text-align: left;
+    ul {
+      list-style-type: none;
+    }
+
+    li:before {
+      content: '';
+      display: inline-block;
+      width: 1.52em;
+    }
+
+    li.home {
+      background-image: url(http://res.cloudinary.com/lucedesign/image/upload/v1529872332/home_u8rucz.svg);
+      background-repeat: no-repeat;
+      background-size: 1.3em;
+      padding-left: 15px;
+    }
+
+    li.about {
+      background-image: url(http://res.cloudinary.com/lucedesign/image/upload/v1529872317/about_jaopop.svg);
+      background-repeat: no-repeat;
+      background-size: 1.3em;
+      padding-left: 15px;
+    }
+
+    li.projects {
+      background-image: url(http://res.cloudinary.com/lucedesign/image/upload/v1529872337/projects_ip7orl.svg);
+      background-repeat: no-repeat;
+      background-size: 1.3em;
+      padding-left: 15px;
+    }
+
+    li.contact {
+      background-image: url(http://res.cloudinary.com/lucedesign/image/upload/v1529872325/contact_xeygow.svg);
+      background-repeat: no-repeat;
+      background-size: 1.3em;
+      padding-left: 15px;
+    }
+
+    #home {
+      position: fixed;
+      top: 130px;
+      left: 212px;
+    }
+
+    #about {
+      position: fixed;
+      top: 190px;
+      left: 212px;
+    }
+
+    #projects {
+      position: fixed;
+      top: 250px;
+      left: 212px;
+    }
+
+    #contact {
+      position: fixed;
+      top: 320px;
+      left: 212px;
+    }
+
+
 `;
 
 
