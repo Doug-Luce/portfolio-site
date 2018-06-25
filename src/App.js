@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import baseStyles from './baseStyles';
 import Home from './pages/Home';
-
+import Footer from './components/Footer';
 
 // Placeholder pages for testing the Routes
 const About = () => <div>About Page</div>;
@@ -19,7 +19,7 @@ const MainLayout = () => (
     <Route path ="/about" component={About} />
     <Route path ="/projects" component={Projects} />
     <Route path="/contact" component={Contact} />
-    {/* <Menu /> */}
+    <Footer />
   </main>
 );
 

@@ -2,6 +2,7 @@ import React from "react";
 import { H1, H2, P } from '../components/typography';
 import HomeStyles from './styles/HomeStyles';
 import ContactButton from '../components/ContactButton';
+import Footer from '../components/Footer';
 
 const Home = () => (
   <HomeStyles className="home-page">
@@ -44,6 +45,7 @@ const Home = () => (
         </P>
       </div>
   </HomeStyles>
+
 );
 
 export default Home;

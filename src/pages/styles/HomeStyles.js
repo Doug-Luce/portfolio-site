@@ -49,6 +49,7 @@ const HomeStyles = styled.div`
       padding-right: 2rem;
       padding-left: 1.5rem;
       width: 50%;
+      height: auto;
     }
 
     .right-column p {
