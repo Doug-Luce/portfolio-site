@@ -15,8 +15,16 @@ const About = () => (
         <P>Outside of work I enjoy the company of my wife and son. We like to enjoy the outdoors as much as we can, and camp
             often. I can also be found tinkering, making things, perfectings a cup of coffee, gaming, or of course programming.
         </P>
-        <P><strong>Interested in working with me?</strong></P>
+        
+        <H3>Education:</H3>
+        <P><strong>Western Governor's University</strong> - Bachelor's Degree, Software Development (In Progress)</P>
+        <P><strong>Clark College</strong>Associate's Degree, Information Technology</P>
+        <P><strong>Tongue Point - Vocational Training</strong>Computer and Information Sciences and Support Services.</P>
+        <H3>Experience:</H3>
+        <ul><li><strong>IT Manager</strong></li><li>Entercom Portland</li><li>Nov 2015 - Present</li></ul>
+        <ul><li><strong>Computer Support Specialist</strong></li><li>Vivageek</li><li>Nov 2007 - Oct 2015</li></ul>
         <ContactButton>Contact Me</ContactButton>
+        <P><strong>Interested in working with me?</strong></P>
     </AboutStyles>
 );
 
