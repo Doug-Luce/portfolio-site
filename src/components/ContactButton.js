@@ -14,6 +14,3 @@ const ContactButton = styled.button`
 `;
 
 export default ContactButton;
-
-
-

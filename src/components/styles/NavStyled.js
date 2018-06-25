@@ -118,7 +118,6 @@ const NavStyles = styled.nav`
   `}
 
   ${media.between('small', 'medium')`
-    /* screen width is between 768px (medium) and 1170px (large) */
     .chat-button {
       margin-left: 5rem;
     }

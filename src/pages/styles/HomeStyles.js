@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 const HomeStyles = styled.div`
   .home-copy {
@@ -23,6 +24,50 @@ const HomeStyles = styled.div`
   .home-copy p {
     padding-bottom: 1rem;
   }
+
+  .right-column {
+    display: none;
+  }
+
+  ${media.greaterThan('medium')`
+    .about-copy {
+      display: none;
+    }
+
+    .home-copy {
+      float: left;
+      padding-top: 4rem;
+      padding-left: 2rem;
+      padding-right: 1.5rem;
+      width: 50%;
+    }
+
+    .right-column {
+      float: right;
+      display: block;
+      padding-top: 4rem;
+      padding-right: 2rem;
+      padding-left: 1.5rem;
+      width: 50%;
+    }
+
+    .right-column p {
+      font-size: 22px;
+      line-height: 38px;
+      padding-top: 1rem;
+    }
+
+  `}
+
+    ${media.greaterThan('large')`
+      .home-copy {
+        padding-left: 20%;
+      }
+      .right-column {
+        padding-right: 20%;
+      }
+
+  `}
 `;
 export default HomeStyles;
 
