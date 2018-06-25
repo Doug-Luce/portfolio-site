@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import baseStyles from './baseStyles';
-import Home from './pages/home';
+import Home from './pages/Home';
 
 
 // Placeholder pages for testing the Routes

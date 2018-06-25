@@ -10,18 +10,23 @@ const NavStyles = styled.nav`
   justify-content: space-between;
   min-width: 375px;
 
+  #logo {
+    color:${palette.lightCream};
+    text-decoration: none;
+  }
+
   #logo:hover {
     text-shadow:none;
     background-image: none;
   }
 
-  a {
+  li a {
     color: ${palette.lightCream};
     cursor: pointer;
     text-decoration: none;
   }
 
-  a:hover {
+  li a:hover {
     text-shadow: 2px 2px 10px ${palette.black};
     background-image: linear-gradient(120deg, #F88D35 0%, #32A2BB 100%);
     background-repeat: no-repeat;
@@ -76,8 +81,14 @@ const NavStyles = styled.nav`
     z-index: 2;
   }
 
+  .chat-button a {
+    text-decoration: none;
+  }
   .chat-button p {
+    color: ${palette.lightCream};
     margin-top: 5%;
+    padding-bottom: 15px;
+    padding-top: 5px;
   }
 
   img {
