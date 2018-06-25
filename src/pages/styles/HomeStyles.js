@@ -63,9 +63,11 @@ const HomeStyles = styled.div`
     ${media.greaterThan('large')`
       .home-copy {
         padding-left: 20%;
+        max-width: 60rem;
       }
       .right-column {
         padding-right: 20%;
+        max-width: 60rem;
       }
 
   `}
