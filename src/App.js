@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import baseStyles from './baseStyles';
 import Home from './pages/Home';
+import About from './pages/About';
 import Footer from './components/Footer';
 
 // Placeholder pages for testing the Routes
-const About = () => <div>About Page</div>;
 const Projects = () => <div>Projects Page</div>;
 const Contact = () => <div>Contact Page</div>;
 
