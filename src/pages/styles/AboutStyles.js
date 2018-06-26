@@ -40,10 +40,6 @@ const AboutStyles = styled.div`
     padding-left: 12rem;
   }
 
-  .education p {
-    padding-bottom: .5rem;
-  }
-
   .interest {
     letter-spacing: 1.2px;
     padding: 0;
@@ -83,6 +79,10 @@ const AboutStyles = styled.div`
     .top-row {
       padding-left: 0;
       align-items: center;
+    }
+    .about, .education, .experience {
+      flex-direction: column;
+      padding-left: 6rem;
     }
 
   `}

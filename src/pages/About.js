@@ -30,7 +30,7 @@ const About = () => (
         <div className="min-width">
           <H3>Education:</H3>
         </div>
-        <div className="education">
+        <div>
           <P><strong>Western Governor's University</strong> - Bachelor's Degree, Software Development (In Progress)</P>
           <P><strong>Clark College</strong> - Associate's Degree, Information Technology</P>
           <P><strong>Tongue Point, Vocational Training</strong> - Computer and Information Sciences and Support Services.</P>
