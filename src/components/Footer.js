@@ -8,7 +8,7 @@ const Footer = () => {
   return(
     <FooterStyle>
       <GradientRule width="80%"/>
-      <div class="social-icons"><SocialStyles><SocialButtons /></SocialStyles></div>
+      <div className="social-icons"><SocialStyles><SocialButtons /></SocialStyles></div>
     </FooterStyle>
   );
 };
