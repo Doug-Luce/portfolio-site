@@ -6,19 +6,19 @@ import ContactButton from '../components/ContactButton';
 const About = () => (
   <AboutStyles className="about-page">
     <div className="row top-row">
-      <div className="column-half">
+      <div>
         <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Portland, OR.</H2>
       </div>
-      <div className="column-half portrait">
+      <div className="portrait">
         <img alt="round self portrait of Doug Luce" className="column portrait" src="http://res.cloudinary.com/lucedesign/image/upload/v1529958549/Portrait_nrffzr.png" />
       </div>
     </div>
-    <div className="row">
-      <div className="column-one-third">
+    <div className="row about">
+      <div className="min-width">
         <H3>About:</H3>
       </div>
-        <div className="column-two-thirds">
-          <P id="para-one">I currently work as an IT Manger for Entercom Communications,
+        <div>
+          <P>I currently work as an IT Manger for Entercom Communications,
                 and working on finishing my Bachelor's degree in Software Development. I have a voracious thirst for all things
                 programming, and love spending time learning new skills, and building new projects.</P>
           <P>Outside of work I enjoy the company of my wife and son. We like to enjoy the outdoors as much as we can, and camp
@@ -26,21 +26,21 @@ const About = () => (
           </P>
         </div>
       </div>
-      <div className="row">
-        <div className="column-one-third">
+      <div className="row education">
+        <div className="min-width">
           <H3>Education:</H3>
         </div>
-        <div className="column-two-thirds education">
+        <div className="education">
           <P><strong>Western Governor's University</strong> - Bachelor's Degree, Software Development (In Progress)</P>
           <P><strong>Clark College</strong> - Associate's Degree, Information Technology</P>
           <P><strong>Tongue Point, Vocational Training</strong> - Computer and Information Sciences and Support Services.</P>
         </div>
       </div>
-    <div className="row">
-      <div className="column-one-third">
+    <div className="row experience">
+      <div className="min-width">
         <H3>Experience:</H3>
       </div>
-      <div className="column-two-thirds">
+      <div>
         <ul className="position-one"><li><strong>IT Manager</strong></li><li>Entercom Portland</li><li>Nov 2015 - Present</li></ul>
         <ul><li><strong>Computer Support Specialist</strong></li><li>Vivageek</li><li>Nov 2007 - Oct 2015</li></ul>
       </div>

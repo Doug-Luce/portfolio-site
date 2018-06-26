@@ -23,7 +23,6 @@ class NavBar extends React.Component {
   render() {
     return (
       <NavStyles>
-
         <h4><a id="logo" href="/">Douglas Luce <br />Software Developer</a></h4>
           <NavLinks />
         <ChatButton />

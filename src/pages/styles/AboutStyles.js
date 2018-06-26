@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import * as palette from '../../components/color';
-import { defaultBreakpoints } from "styled-media-query";
-
-console.log(defaultBreakpoints);
+import media from 'styled-media-query';
 
 const AboutStyles = styled.div`
+
+  .about-page {
+    display: flex; 
+  }
    p, ul {
     line-height: 2rem;
   }
@@ -15,7 +17,7 @@ const AboutStyles = styled.div`
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     letter-spacing: 1.5px;
     line-height: 3rem;
     padding-right: 3rem;
@@ -32,28 +34,10 @@ const AboutStyles = styled.div`
     padding: 0;
   }
 
-  #para-one {
-    padding-bottom: 1rem;
-  }
-
   .row {
     display: flex;
     padding-bottom: 2.5rem;
     padding-left: 12rem;
-  }
-
-  .column-half {
-    flex: 50%;
-  }
-
-  .column-one-third {
-    flex: 33.3%;
-  }
-
-  .column-two-thirds {
-    flex: 77.7%;
-    margin-right: 20rem;
-    max-width: 750px;
   }
 
   .education p {
@@ -72,12 +56,16 @@ const AboutStyles = styled.div`
     padding-top: 2rem;
   }
 
+  .min-width {
+    min-width: 8rem;
+  }
+
   .mobile-portrait {
     display: none;
   }
 
   .portrait img {
-    max-width: 9rem;
+    max-width: 12rem;
   }
 
   .position-one {
@@ -86,22 +74,20 @@ const AboutStyles = styled.div`
 
   .top-row {
     padding-top: 3rem;
+  }
 
-    @media (max-width: 1150px) {
-      h2 {
-        font-size: 2.6vw;
-      }
+  ${media.lessThan('medium')`
+    .top-row {
+      flex-direction: column-reverse;
+    }
+    .top-row {
+      padding-left: 0;
+      align-items: center;
     }
 
-    @media (max-width: 865px) {
-      h2 {
-        font-size: 2.2rem;
-      }
+  `}
 
-      .portrait {
-        display: none;
-      }
-    }
+
 `;
 
 export default AboutStyles;
