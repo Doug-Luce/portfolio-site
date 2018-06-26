@@ -17,7 +17,7 @@ const About = () => (
       <div className="min-width">
         <H3>About:</H3>
       </div>
-        <div>
+        <div className="about-p">
           <P>I currently work as an IT Manger for Entercom Communications,
                 and working on finishing my Bachelor's degree in Software Development. I have a voracious thirst for all things
                 programming, and love spending time learning new skills, and building new projects.</P>

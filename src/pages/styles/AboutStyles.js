@@ -34,6 +34,10 @@ const AboutStyles = styled.div`
     padding: 0;
   }
 
+  .about-p {
+    padding-right: 25%;
+  }
+
   .row {
     display: flex;
     padding-bottom: 2.5rem;
@@ -73,6 +77,24 @@ const AboutStyles = styled.div`
   }
 
   ${media.lessThan('medium')`
+    .about, .education, .experience {
+      flex-direction: column;
+      /* padding-left: 6rem; */
+      padding-left: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      letter-spacing: normal;
+      line-height: normal;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+
+    .row {
+      /* padding-left: 3rem; */
+    }
     .top-row {
       flex-direction: column-reverse;
     }
@@ -80,10 +102,7 @@ const AboutStyles = styled.div`
       padding-left: 0;
       align-items: center;
     }
-    .about, .education, .experience {
-      flex-direction: column;
-      padding-left: 6rem;
-    }
+
 
   `}
 
