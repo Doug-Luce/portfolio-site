@@ -5,14 +5,11 @@ import ContactButton from '../components/ContactButton';
 
 const About = () => (
   <AboutStyles className="about-page">
-    <div className="mobile-portrait">
-      <img alt="round self portrait of Doug Luce" className="column portrait" src="http://res.cloudinary.com/lucedesign/image/upload/v1529958549/Portrait_nrffzr.png" />
-    </div>
     <div className="row top-row">
-      <div className="column-two-thirds">
+      <div className="column-half">
         <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Portland, OR.</H2>
       </div>
-      <div className="column-one-third portrait">
+      <div className="column-half portrait">
         <img alt="round self portrait of Doug Luce" className="column portrait" src="http://res.cloudinary.com/lucedesign/image/upload/v1529958549/Portrait_nrffzr.png" />
       </div>
     </div>
@@ -21,7 +18,7 @@ const About = () => (
         <H3>About:</H3>
       </div>
         <div className="column-two-thirds">
-          <P>I currently work as an IT Manger for Entercom Communications,
+          <P id="para-one">I currently work as an IT Manger for Entercom Communications,
                 and working on finishing my Bachelor's degree in Software Development. I have a voracious thirst for all things
                 programming, and love spending time learning new skills, and building new projects.</P>
           <P>Outside of work I enjoy the company of my wife and son. We like to enjoy the outdoors as much as we can, and camp
@@ -44,16 +41,14 @@ const About = () => (
         <H3>Experience:</H3>
       </div>
       <div className="column-two-thirds">
-        <ul><li><strong>IT Manager</strong></li><li>Entercom Portland</li><li>Nov 2015 - Present</li></ul>
+        <ul className="position-one"><li><strong>IT Manager</strong></li><li>Entercom Portland</li><li>Nov 2015 - Present</li></ul>
         <ul><li><strong>Computer Support Specialist</strong></li><li>Vivageek</li><li>Nov 2007 - Oct 2015</li></ul>
       </div>
     </div>
-    <div className="row">
+    <div className="row interest">
       <P className="interested"><strong>Interested in working with me?</strong></P>
     </div>
-    <div className="row">
       <ContactButton>Contact Me</ContactButton>
-    </div>
   </AboutStyles>
 );
 
