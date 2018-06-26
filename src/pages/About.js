@@ -3,8 +3,9 @@ import {  H2, H3, P } from '../components/typography';
 import AboutStyles from './styles/AboutStyles';
 import ContactButton from '../components/ContactButton';
 
-const About = () => (
+const About = (props) => (
   <AboutStyles className="about-page">
+  { console.log(props) }
     <div className="row top-row">
       <div>
         <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Portland, OR.</H2>
@@ -48,7 +49,7 @@ const About = () => (
     <div className="row interest">
       <P className="interested"><strong>Interested in working with me?</strong></P>
     </div>
-      <ContactButton>Contact Me</ContactButton>
+      <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
   </AboutStyles>
 );
 
