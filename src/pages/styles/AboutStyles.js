@@ -5,7 +5,7 @@ import media from 'styled-media-query';
 const AboutStyles = styled.div`
 
   .about-page {
-    display: flex; 
+    display: flex;
   }
    p, ul {
     line-height: 2rem;
@@ -84,14 +84,12 @@ const AboutStyles = styled.div`
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 7vw;
       letter-spacing: normal;
       line-height: normal;
       padding-right: 0;
       padding-left: 0;
     }
-
-
     .row {
       /* padding-left: 3rem; */
     }
@@ -102,10 +100,7 @@ const AboutStyles = styled.div`
       padding-left: 0;
       align-items: center;
     }
-
-
   `}
-
 
 `;
 
