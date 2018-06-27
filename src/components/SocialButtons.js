@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const SocialButtons = (props) => {
-  const color = props.secondary;
 
   if(!props.secondary) {
     return (
@@ -22,7 +21,6 @@ export const SocialButtons = (props) => {
       </ul>
     );
   }
-
 };
 
 export default SocialButtons;

@@ -2,20 +2,36 @@ import styled from 'styled-components';
 import * as palette from '../components/color.js';
 import SocialButtons from './SocialButtons';
 import SocialStyles from './styles/SocialStyles';
-import { H1, H2, H3, P } from './typography';
+import {  H2, H3 } from './typography';
 import React from 'react';
 
 const Bio = styled.div`
 h2, h3 {
   color: ${ palette.lightCream };
+  padding-left: 2rem;
+}
+
+h2 {
+  font-weight: 600;
+  padding-top: 1rem;
 }
   
 `;
 const ContactInfo = styled.div`
+  a {
+    color: ${palette.lightCream};
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin-right: 0.7em;
+    padding: 0 0 .5rem 2rem;
+  }
   a[href^="tel:"]:before {
-  content: "\\260e";
-  margin-right: 0.5em;
-}
+    content: "\\260e";
+  }
+
+  a[href^="mailto:"]:before {
+  content: "\\2709";
 `;
 const Img = styled.img`
   width: 100%;
@@ -39,7 +55,7 @@ class ContactCard extends React.Component {
         </Bio>
         <SocialStyles secondary><SocialButtons secondary/></SocialStyles>
         <ContactInfo>
-          <a href="mailto:someone@yoursite.com">Luce.douglas@gmail.com</a>
+          <a href="mailto:luce.douglas@gmail.com">luce.douglas@gmail.com</a>
           <a href="tel:1-360-513-8325">360.513.8325</a>
         </ContactInfo>
       </Section>
