@@ -11,13 +11,18 @@ class NavBar extends React.Component {
     super(props);
     this.state = {toggle: true};
     this.handleClick = this.handleClick.bind(this);
+    // this.closeMenu = this.closeMenu.bind(this);
   }
-
+  // closeMenu() {
+  //   this.setState({toggle: false});
+  //   console.log(this.state.toggle);
+  // }
   // Turns off and on the hamburger menu.
   handleClick() {
     this.setState(prevState => ({
       toggle: !prevState.toggle
     }));
+
   };
 // TODO Add a way to close the menu if the screen width gets bigger than 768 pixels
   render() {
@@ -28,7 +33,7 @@ class NavBar extends React.Component {
         <ChatButton />
         {/* Pass the Hamburger component the toggle state and the click handler */}
         <Hamburger toggle={this.state.toggle} onClick={this.handleClick} />
-        {this.state.toggle ? <Menu /> : <Menu open="true"><MenuItems /></Menu>}
+        <Menu toggle={!this.state.toggle}><MenuItems onClick={this.handleClick} /></Menu>
       </NavStyles>
     );
   }

@@ -5,7 +5,6 @@ import ContactButton from '../components/ContactButton';
 
 const About = (props) => (
   <AboutStyles className="about-page">
-  { console.log(props) }
     <div className="row top-row">
       <div>
         <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Portland, OR.</H2>

@@ -52,5 +52,4 @@ const MenuItemStyle = styled.div`
     }
 `;
 
-
 export default MenuItemStyle;
