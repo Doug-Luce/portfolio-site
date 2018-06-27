@@ -5,6 +5,7 @@ import baseStyles from './baseStyles';
 import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './components/Footer';
+import ContactCard from './components/ContactCard';
 
 // Placeholder pages for testing the Routes
 const Projects = () => <div>Projects Page</div>;
@@ -21,7 +22,7 @@ const App = () => {
         <Route path ="/" exact component={Home} />
         <Route path ="/about" component={About} />
         <Route path ="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/contact" component={ContactCard} />
         <Footer />
       </main>
 )
