@@ -5,11 +5,10 @@ import baseStyles from './baseStyles';
 import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './components/Footer';
-import ContactCard from './components/ContactCard';
+import Contact from './pages/Contact';
 
 // Placeholder pages for testing the Routes
 const Projects = () => <div>Projects Page</div>;
-const Contact = () => <div>Contact Page</div>;
 
 // App renders the Mainlayout component inside of a Router component.
 // The baseStyles() function is for giving a set of global css values.
@@ -22,7 +21,7 @@ const App = () => {
         <Route path ="/" exact component={Home} />
         <Route path ="/about" component={About} />
         <Route path ="/projects" component={Projects} />
-        <Route path="/contact" component={ContactCard} />
+        <Route path="/contact" component={Contact} />
         <Footer />
       </main>
 )
