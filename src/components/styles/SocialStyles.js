@@ -5,8 +5,8 @@ const SocialStyles = styled.div`
   margin-bottom: 1.5rem;
 
   .social-buttons {
-    border-top: 5px solid #1A97B4;
-    border-bottom: 5px solid #1A97B4;
+    border-top: 5px solid ${props => props.secondary ? '#FFECD4' : '#1A97B4'};
+    border-bottom: 5px solid ${props => props.secondary ? '#FFECD4' : '#1A97B4'};
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
