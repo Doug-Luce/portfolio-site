@@ -5,7 +5,6 @@ import { withRouter } from 'react-router-dom';
 class MenuItems extends React.Component {
   constructor(props) {
     super(props);
-
     this.clickHandler = this.clickHandler.bind(this);
   }
   clickHandler(path) {

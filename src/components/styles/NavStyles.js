@@ -8,7 +8,6 @@ const NavStyles = styled.nav`
   background-image: ${palette.navGradient};
   display: flex;
   justify-content: space-between;
-  min-width: 375px;
 
   #logo {
     color:${palette.lightCream};
