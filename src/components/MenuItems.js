@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuItemsStyle from './styles/MenuItemsStyle';
+import MenuItemsStyle from './styles/MenuItemsStyles';
 import { withRouter } from 'react-router-dom';
 
 class MenuItems extends React.Component {

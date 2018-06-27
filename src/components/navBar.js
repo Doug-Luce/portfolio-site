@@ -1,9 +1,9 @@
 import React from 'react';
-import NavStyles from './styles/NavStyled';
+import NavStyles from './styles/NavStyles';
 import NavLinks from './NavLinks';
 import ChatButton from './ChatButton';
 import Hamburger from './Hamburger';
-import Menu from './styles/MenuStyled';
+import Menu from './styles/MenuStyles';
 import MenuItems from './MenuItems';
 
 class NavBar extends React.Component {
@@ -24,7 +24,6 @@ class NavBar extends React.Component {
     }));
 
   };
-// TODO Add a way to close the menu if the screen width gets bigger than 768 pixels
   render() {
     return (
       <NavStyles>

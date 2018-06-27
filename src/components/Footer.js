@@ -2,14 +2,14 @@ import React from 'react';
 import GradientRule from './GradientRule';
 import SocialButtons from './SocialButtons';
 import SocialStyles from './styles/SocialStyles';
-import FooterStyle from './styles/FooterStyle';
+import FooterStyles from './styles/FooterStyles';
 
 const Footer = () => {
   return(
-    <FooterStyle>
+    <FooterStyles>
       <GradientRule width="80%"/>
       <div className="social-icons"><SocialStyles><SocialButtons /></SocialStyles></div>
-    </FooterStyle>
+    </FooterStyles>
   );
 };
 
