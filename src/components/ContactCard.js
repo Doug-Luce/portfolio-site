@@ -21,7 +21,7 @@ const ContactInfo = styled.div`
   a {
     color: ${palette.lightCream};
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
     margin-right: 0.7em;
     padding: 0 0 .5rem 2rem;

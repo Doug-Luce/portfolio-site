@@ -3,7 +3,7 @@ import * as palette from './color';
 
 export const H1 = styled.h1`
   color: ${palette.black};
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:  Tahoma, Geneva, Verdana, sans-serif;
   font-size: 53px;
   font-weight: 100;
   line-height: 73px;
@@ -12,7 +12,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
   color: ${palette.black};
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-size: 29px;
   font-weight: 100;
   line-height: 41px;
@@ -21,7 +21,7 @@ export const H2 = styled.h2`
 
 export const H3 = styled.h3`
 color: ${palette.black};
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-size: 22px;
   font-weight: 100;
   line-height: 41px;
@@ -30,7 +30,7 @@ color: ${palette.black};
 
 export const P = styled.p`
   color: ${palette.black};
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:  Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
   line-height: 18px;
   text-align: left;

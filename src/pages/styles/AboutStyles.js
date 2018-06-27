@@ -28,7 +28,7 @@ const AboutStyles = styled.div`
   }
 
   ul {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
     color: ${palette.black};
     list-style-type: none;
     padding: 0;
@@ -45,7 +45,7 @@ const AboutStyles = styled.div`
   }
 
   .interest {
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
     padding: 0;
     padding-bottom: 2rem;
   }

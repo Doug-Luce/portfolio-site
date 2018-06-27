@@ -8,7 +8,7 @@ const ContactButton = styled.button`
   box-shadow: 0 2px 0 0 #386C89;
   border-radius: 4px;
   color: ${palette.lightCream};
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:  Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-weight: 500;
   padding: .5rem 2rem .5rem 2rem;
