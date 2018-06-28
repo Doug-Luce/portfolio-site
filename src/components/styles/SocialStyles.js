@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const SocialStyles = styled.div`
   margin-top: 1.5rem;

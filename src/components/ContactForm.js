@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import * as palette from '../components/color.js';
-import { H1, H2, H3, P } from './typography';
+import { P } from './typography';
 import ContactButton from './ContactButton';
 
 const SubmitButton = ContactButton.extend`
