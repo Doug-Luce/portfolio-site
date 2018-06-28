@@ -4,7 +4,7 @@ import HomeStyles from './styles/HomeStyles';
 import ContactButton from '../components/ContactButton';
 
 const Home = (props) => (
-  <HomeStyles className="home-page">
+  <HomeStyles className="home-page  animated fadeIn">
     <div className="home-copy">
       <H1>Hi,<br/>
           I'm Doug,

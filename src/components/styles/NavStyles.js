@@ -80,6 +80,10 @@ const NavStyles = styled.nav`
     z-index: 2;
   }
 
+  .chat-button:hover {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.50), 0 4px 3px 0 #F89235;
+  }
+
   .chat-button a {
     text-decoration: none;
   }

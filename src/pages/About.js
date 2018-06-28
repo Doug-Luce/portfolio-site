@@ -9,7 +9,7 @@ const About = (props) => (
       <div>
         <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Portland, OR.</H2>
       </div>
-      <div className="portrait">
+      <div className="portrait animated flipInX">
         <img alt="round self portrait of Doug Luce" className="column portrait" src="http://res.cloudinary.com/lucedesign/image/upload/v1529958549/Portrait_nrffzr.png" />
       </div>
     </div>

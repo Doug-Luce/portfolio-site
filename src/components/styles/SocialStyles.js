@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const SocialStyles = styled.div`
   margin-top: 1.5rem;
@@ -19,6 +19,10 @@ const SocialStyles = styled.div`
   .social-buttons li {
     list-style-type: none;
   }
+  .social-buttons li:hover {
+    animation: rotateIn .7s;
+  }
+
 `;
 
 export default SocialStyles;

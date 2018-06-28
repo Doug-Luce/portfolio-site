@@ -15,7 +15,7 @@ h2 {
   font-weight: 600;
   padding-top: 1rem;
 }
-  
+
 `;
 const ContactInfo = styled.div`
   a {
@@ -23,15 +23,8 @@ const ContactInfo = styled.div`
     display: flex;
     font-family:  Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
-    margin-right: 0.7em;
     padding: 0 0 .5rem 2rem;
   }
-  a[href^="tel:"]:before {
-    content: "\\260e";
-  }
-
-  a[href^="mailto:"]:before {
-  content: "\\2709";
 `;
 const Img = styled.img`
   width: 100%;
@@ -47,7 +40,7 @@ const Section = styled.section`
 class ContactCard extends React.Component {
   render() {
     return (
-      <Section>
+      <Section className="animated fadeIn">
         <Img src="http://res.cloudinary.com/lucedesign/image/upload/v1530120006/dougs_at_disney_uw4sdn.jpg"/>
         <Bio>
           <H2>Doug Luce</H2>
