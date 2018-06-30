@@ -12,7 +12,6 @@ h2, h3 {
 }
 
 h2 {
-  font-weight: 600;
   padding-top: 1rem;
 }
 
