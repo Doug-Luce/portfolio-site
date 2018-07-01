@@ -60,7 +60,7 @@
     projectName: 'Adventure Time Quote Generator',
     projectType: 'JavaScript',
     category: 'Web App, API',
-    description: `I built this web app on Codepen.io, it currently has over 3k views! I didn’t think that iwould be as popular as it is, being such a simple project but it’s my most popular project. I’m going to move this to it’s own domain, as well as the custom API I built for it.`,
+    description: `I built this web app on Codepen.io, it currently has over 3k views! I didn’t think that it would be as popular as it is, being such a simple project but it’s my most popular project. I’m going to move this to it’s own domain, as well as the custom API I built for it.`,
     imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394941/MacBook_-_Adventure_Time_Quote_logxzd.png',
     slug: 'adventure-time-quote-generator'
   },

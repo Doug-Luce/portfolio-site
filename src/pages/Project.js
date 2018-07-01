@@ -1,11 +1,7 @@
 import React from "react";
-import { H1, H2, P } from '../components/typography';
-import { Link } from 'react-router-dom';
-import ProjectStyles from './styles/ProjectStyles';
-import { dump } from '../helpers';
 import projects from '../projects';
 import ProjectPage from '../components/ProjectPage';
-
+import ProjectNav from '../components/ProjectNav';
 
 class Project extends React.Component {
   constructor(props) {
@@ -51,7 +47,6 @@ class Project extends React.Component {
   navigateLeft() {
     if(this.state.currentId === 0 || this.state.currentId < 0) {
       this.setState({currentId: this.state.projectCount -1});
-      console.log('I ran');
       this.props.history.push(`/projects/${this.state.projectCount -1}`);
     } else {
       this.setState({currentId: this.state.currentId - 1});
@@ -63,9 +58,7 @@ class Project extends React.Component {
     return(
       <div>
         {/* <p>{dump(projects[this.state.currentId])}</p> */}
-        <ProjectPage props={projects[this.state.currentId]}/>
-        <button onClick={this.navigateLeft}>LEFT</button>
-        <button onClick={this.navigateRight}>RIGHT</button>
+        <ProjectPage props={projects[this.state.currentId]} goLeft={this.navigateLeft} goRight={this.navigateRight}/>
       </div>
     );
   }

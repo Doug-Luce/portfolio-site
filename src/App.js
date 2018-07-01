@@ -11,17 +11,18 @@ import Project from './pages/Project';
 // App renders the Mainlayout component inside of a Router component.
 // The baseStyles() function is for giving a set of global css values.
 
-const App = () => {
+const App = (props) => {
   baseStyles()
   return (
       <main>
         <NavBar />
-        <Switch>
           <Route path ="/" exact component={Home} />
           <Route path ="/about" component={About} />
-          <Route path={`/projects/:id`} component={Project} />
+          <Switch>
+            <Route path={`/projects/:id`} component={Project} />
+            <Route path={`/projects`} render={()=><Redirect to={`/projects/0`}/>}  />
+          </Switch>
           <Route path="/contact" component={Contact} />
-        </Switch>
         <Footer />
       </main>
 )
