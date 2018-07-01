@@ -24,7 +24,7 @@ class Project extends React.Component {
     this.setState({projectCount: projects.length});
   }
 
-  navigateRight() {
+  navigateRight(event) {
     // This will set the limit pased on how many projects there are
     // in the projects array. Then if the limit is not equal to how many
     // projects are there are we will push the current id to the url

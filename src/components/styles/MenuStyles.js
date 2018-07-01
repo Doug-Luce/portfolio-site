@@ -14,6 +14,7 @@ const Menu = styled.div`
   /* This will hide the slideout menu or show it depending on the state passed in as props */
   transform: ${props => props.toggle ? 'translate3d(-20vw, 0, 0);' : 'translate3d(-110vw, 0, 0);'};
   width: 100vw;
+  z-index: 1;
 `;
 
 export default Menu;
