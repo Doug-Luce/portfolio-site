@@ -19,6 +19,10 @@ const Section = styled.section`
   padding-top: 3rem;
   padding-left: 5%;
 
+  #top-nav {
+    display: none;
+  }
+
   img {
     width: 100%;
     height: auto;
@@ -32,6 +36,12 @@ const Section = styled.section`
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 1rem;
+
+    #top-nav {
+      display: block;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
   `};
 
   ${customMedia.lessThan("small")`
@@ -65,10 +75,14 @@ const ProjectPage = ({props, goLeft, goRight}) => {
       </ProjectInfoStyles>
       <div>
         <img src={props.imageUrl} />
+        <div id="top-nav">
+          <ProjectNav  goLeft={goLeft} goRight={goRight} projectName={props.projectName} />
+        </div>
       </div>
-
     </Section>
+    <div id="bottom-nav">
       <ProjectNav goLeft={goLeft} goRight={goRight} projectName={props.projectName} />
+    </div>
     </div>
   );
 };

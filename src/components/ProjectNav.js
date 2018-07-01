@@ -26,6 +26,7 @@ const Div = styled.div`
   #right-button {
     background-image: url('https://res.cloudinary.com/lucedesign/image/upload/v1530406951/rightArrow_hkrqdr.svg');
   }
+
   h2 {
     min-width: 250px;
     text-align: center;
