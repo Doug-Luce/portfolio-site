@@ -24,12 +24,23 @@ class Project extends React.Component {
     this.setState({projectCount: projects.length});
   }
 
-  navigateRight(event) {
+  navigateRight() {
     // This will set the limit pased on how many projects there are
     // in the projects array. Then if the limit is not equal to how many
     // projects are there are we will push the current id to the url
     // + 1 to get the correct item.Then we set the state to show the change
     // of the id. This will cause a render.
+
+    // This will add animations from animate.css by adding the
+    // animated class and the name of the animation. Then we
+    // are manually triggering the rerun of the animation by
+    // setting the offsetHeight.
+    let projectContent = document.getElementById('project-content');
+    projectContent.className = 'animated fadeIn';
+    projectContent.style.animation = 'none';
+    projectContent.offsetHeight;
+    projectContent.style.animation = null;
+
     const limit = this.state.currentId + 1;
     if(!(limit === this.state.projectCount)) {
       // Set the url to /projects/currentId + 1
@@ -45,6 +56,16 @@ class Project extends React.Component {
   }
 
   navigateLeft() {
+    // This will add animations from animate.css by adding the
+    // animated class and the name of the animation. Then we
+    // are manually triggering the rerun of the animation by
+    // setting the offsetHeight.
+    let projectContent = document.getElementById('project-content');
+    projectContent.className = 'animated fadeIn';
+    projectContent.style.animation = 'none';
+    projectContent.offsetHeight;
+    projectContent.style.animation = null;
+
     if(this.state.currentId === 0 || this.state.currentId < 0) {
       this.setState({currentId: this.state.projectCount -1});
       this.props.history.push(`/projects/${this.state.projectCount -1}`);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { dump } from '../helpers';
 import { H2, H3 } from '../components/typography';
 import styled from 'styled-components';
 import * as palette from '../components/color';
@@ -43,15 +42,10 @@ const Section = styled.section`
       padding-bottom: 2rem;
     }
   `};
-
-  ${customMedia.lessThan("small")`
-  `};
 `;
-
 
 const ProjectInfoStyles = styled.div`
   max-width: 40rem;
-
   h3 {
     color: ${palette.lightGrey};
     font-size: 1.3rem;
@@ -61,7 +55,7 @@ const ProjectInfoStyles = styled.div`
 
 const ProjectPage = ({props, goLeft, goRight}) => {
   return(
-    <div>
+    <div id="project-content">
     <Section>
       <ProjectInfoStyles>
         <H2>{props.projectName}</H2>

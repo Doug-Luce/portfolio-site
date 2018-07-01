@@ -28,7 +28,7 @@ const Div = styled.div`
   }
 
   h2 {
-    min-width: 250px;
+    min-width: 430px;
     text-align: center;
   }
   ${customMedia.lessThan("small")`
@@ -39,18 +39,15 @@ const Div = styled.div`
   `};
 `;
 
-const Contain = styled.div`
-
-`;
 
 const ProjectNav = (props) => (
-  <Contain>
+  <div>
     <Div>
       <Button id="left-button" onClick={props.goLeft} />
       <H2>{props.projectName}</H2>
       <Button id="right-button" onClick={props.goRight} />
     </Div>
-  </Contain>
+  </div>
 );
 
 export default ProjectNav;
