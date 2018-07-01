@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import * as palette from '../color';
 
-
 // TODO Align icons and menu items
 const MenuItemStyle = styled.div`
     color: ${palette.lightCream};
@@ -51,6 +50,5 @@ const MenuItemStyle = styled.div`
       padding-left: 15px;
     }
 `;
-
 
 export default MenuItemStyle;

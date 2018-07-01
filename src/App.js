@@ -1,37 +1,30 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import NavBar from './components/NavBar';
 import baseStyles from './baseStyles';
 import Home from './pages/Home';
 import About from './pages/About';
 import Footer from './components/Footer';
-
-// Placeholder pages for testing the Routes
-const Projects = () => <div>Projects Page</div>;
-const Contact = () => <div>Contact Page</div>;
-
-
-// MainLayout is a component that contains all of the layout. It loads the necessary components for a page.
-const MainLayout = () => (
-  <main>
-    <NavBar />
-    <Route path ="/" exact component={Home} />
-    <Route path ="/about" component={About} />
-    <Route path ="/projects" component={Projects} />
-    <Route path="/contact" component={Contact} />
-    <Footer />
-  </main>
-);
-
+import Contact from './pages/Contact';
+import Project from './pages/Project';
 
 // App renders the Mainlayout component inside of a Router component.
 // The baseStyles() function is for giving a set of global css values.
-const App = () => {
+
+const App = (props) => {
   baseStyles()
   return (
-    <Router>
-      <MainLayout />
-    </Router>
+      <main>
+        <NavBar />
+          <Route path ="/" exact component={Home} />
+          <Route path ="/about" component={About} />
+          <Switch>
+            <Route path={`/projects/:id`} component={Project} />
+            <Route path={`/projects`} render={()=><Redirect to={`/projects/0`}/>}  />
+          </Switch>
+          <Route path="/contact" component={Contact} />
+        <Footer />
+      </main>
 )
 };
 

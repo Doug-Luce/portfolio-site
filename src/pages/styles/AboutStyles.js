@@ -5,7 +5,7 @@ import media from 'styled-media-query';
 const AboutStyles = styled.div`
 
   .about-page {
-    display: flex; 
+    display: flex;
   }
    p, ul {
     line-height: 2rem;
@@ -28,10 +28,14 @@ const AboutStyles = styled.div`
   }
 
   ul {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
     color: ${palette.black};
     list-style-type: none;
     padding: 0;
+  }
+
+  .about-p {
+    padding-right: 25%;
   }
 
   .row {
@@ -41,7 +45,7 @@ const AboutStyles = styled.div`
   }
 
   .interest {
-    letter-spacing: 1.2px;
+    letter-spacing: 1px;
     padding: 0;
     padding-bottom: 2rem;
   }
@@ -73,6 +77,22 @@ const AboutStyles = styled.div`
   }
 
   ${media.lessThan('medium')`
+    .about, .education, .experience {
+      flex-direction: column;
+      /* padding-left: 6rem; */
+      padding-left: 3rem;
+    }
+
+    h2 {
+      font-size: 7vw;
+      letter-spacing: normal;
+      line-height: normal;
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .row {
+      /* padding-left: 3rem; */
+    }
     .top-row {
       flex-direction: column-reverse;
     }
@@ -80,13 +100,7 @@ const AboutStyles = styled.div`
       padding-left: 0;
       align-items: center;
     }
-    .about, .education, .experience {
-      flex-direction: column;
-      padding-left: 6rem;
-    }
-
   `}
-
 
 `;
 

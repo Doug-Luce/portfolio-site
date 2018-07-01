@@ -3,11 +3,11 @@ import { H1, H2, P } from '../components/typography';
 import HomeStyles from './styles/HomeStyles';
 import ContactButton from '../components/ContactButton';
 
-const Home = () => (
-  <HomeStyles className="home-page">
+const Home = (props) => (
+  <HomeStyles className="home-page  animated fadeIn">
     <div className="home-copy">
       <H1>Hi,<br/>
-          I am Doug,
+          I'm Doug,
           I’m a Software
           Developer.
       </H1>
@@ -18,7 +18,7 @@ const Home = () => (
       <P className="about-copy"> I’m currently seeking employment as a Web
           Developer, and this is my portfolio. Thanks for
           taking the time to look it over, and look at my
-          projects. This portfolio showcases my Full-Stack
+          projects. This portfolio showcases my development
           skills, and also my design skills.
       </P>
 
@@ -27,7 +27,7 @@ const Home = () => (
           myself the majority of my programming skills. I
           look forward to hearing from you!
       </P>
-      <ContactButton>Contact Me</ContactButton>
+      <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
     </div>
     <div className="right-column">
         <P> I’m currently seeking employment as a Web
