@@ -15,7 +15,7 @@ export const H2 = styled.h2`
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-size: 29px;
   font-weight: 100;
-  line-height: 41px;
+  /* line-height: 41px; */
   text-align: left;
 `;
 
@@ -24,7 +24,7 @@ color: ${palette.black};
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-size: 22px;
   font-weight: 100;
-  line-height: 41px;
+  /* line-height: 41px; */
   text-align: left;
 `;
 

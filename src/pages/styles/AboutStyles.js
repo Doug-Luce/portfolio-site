@@ -57,7 +57,7 @@ const AboutStyles = styled.div`
   }
 
   .min-width {
-    min-width: 8rem;
+    min-width: 10rem;
   }
 
   .mobile-portrait {

@@ -32,7 +32,6 @@ const Img = styled.img`
 const Section = styled.section`
   background-color: ${palette.mediumBlue};
   box-shadow: 4px 4px 7px 0px #F88D35;
-  height: 45rem;
   width: 20rem;
 `;
 

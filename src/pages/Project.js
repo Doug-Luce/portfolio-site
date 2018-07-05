@@ -1,7 +1,6 @@
 import React from "react";
 import projects from '../projects';
 import ProjectPage from '../components/ProjectPage';
-import ProjectNav from '../components/ProjectNav';
 
 class Project extends React.Component {
   constructor(props) {

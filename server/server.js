@@ -7,6 +7,15 @@ require('dotenv').config();
 
 console.log(process.env.PORT);
 app.use( express.static(`${__dirname}/../build`));
+
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname, '../build/index.html'), function(err) {
+    if (err) {
+      res.status(500).send(err)
+    }
+  })
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/images'));
 });
