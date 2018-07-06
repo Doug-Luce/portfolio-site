@@ -3,13 +3,6 @@ import { H2, H3 } from '../components/typography';
 import styled from 'styled-components';
 import * as palette from '../components/color';
 import ProjectNav from '../components/ProjectNav';
-import { generateMedia } from 'styled-media-query';
-
-const customMedia = generateMedia({
-  large: '1240px',
-  mediumLarge: '1000px',
-  small: '560px'
-});
 
 const Section = styled.section`
   display: flex;
@@ -27,11 +20,11 @@ const Section = styled.section`
     height: auto;
   }
 
-  ${customMedia.lessThan("large")`
+  @media (max-width: 1240px) {
     min-height: 910px;
-  `};
+  }
 
-  ${customMedia.lessThan("mediumLarge")`
+  @media (max-width: 1000px) {
     flex-direction: column-reverse;
     align-items: center;
     padding-top: 1rem;
@@ -41,7 +34,7 @@ const Section = styled.section`
       padding-top: 2rem;
       padding-bottom: 2rem;
     }
-  `};
+  }
 `;
 
 const ProjectInfoStyles = styled.div`
@@ -68,7 +61,7 @@ const ProjectPage = ({props, goLeft, goRight}) => {
         <H3>DESCRIPTION</H3>
       </ProjectInfoStyles>
       <div>
-        <img src={props.imageUrl} />
+        <img alt="This is a project that Doug Luce built."src={props.imageUrl} />
         <div id="top-nav">
           <ProjectNav  goLeft={goLeft} goRight={goRight} projectName={props.projectName} />
         </div>

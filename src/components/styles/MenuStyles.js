@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import * as palette from '../color';
 
-
-// TODO Fix issue when sliding up on mobile shows gap
-// between header and menu
 const Menu = styled.div`
   background-color: ${palette.lightBlue};
   box-shadow: 3px 0 6px 0 #186678;

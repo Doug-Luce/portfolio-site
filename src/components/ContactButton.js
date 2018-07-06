@@ -16,7 +16,7 @@ const ContactButton = styled.button`
   text-align: center;
   text-shadow: 0 1px 1px rgba(0,0,0,0.50);
 
-  /* &&:hover {
+  &&:hover {
     cursor: pointer;
     box-shadow: 2px 2px 8px ${palette.lightBlue};
     transition: all .4s ease;
@@ -26,7 +26,7 @@ const ContactButton = styled.button`
     box-shadow: none;
     box-shadow:         inset 0 0 2px ${palette.black};
     transform: translate(0, 7px);
-  } */
+  }
 `;
 
 export default ContactButton;

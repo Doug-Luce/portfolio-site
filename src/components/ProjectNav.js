@@ -1,13 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { H2 } from './typography';
-import { generateMedia } from 'styled-media-query';
-
-const customMedia = generateMedia({
-  large: '1240px',
-  mediumLarge: '1000px',
-  small: '560px'
-});
 
 const Button = styled.button`
   background-repeat: no-repeat;
@@ -31,12 +24,13 @@ const Div = styled.div`
     min-width: 430px;
     text-align: center;
   }
-  ${customMedia.lessThan("small")`
+
+  @media (max-width: 560px) {
     h2 {
       font-size: 5vw;
       min-width: 250px;
     }
-  `};
+  }
 `;
 
 

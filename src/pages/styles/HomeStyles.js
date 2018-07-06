@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import media from 'styled-media-query';
 
 const HomeStyles = styled.div`
   .home-copy {
@@ -29,7 +28,7 @@ const HomeStyles = styled.div`
     display: none;
   }
 
-  ${media.greaterThan('medium')`
+  @media (min-width: 768px) {
     .about-copy {
       display: none;
     }
@@ -57,20 +56,18 @@ const HomeStyles = styled.div`
       line-height: 38px;
       padding-top: 1rem;
     }
+  }
 
-  `}
-
-    ${media.greaterThan('large')`
-      .home-copy {
-        padding-left: 20%;
-        max-width: 60rem;
-      }
-      .right-column {
-        padding-right: 20%;
-        max-width: 60rem;
-      }
-
-  `}
+  @media (min-width: 1170px) {
+    .home-copy {
+      padding-left: 20%;
+      max-width: 60rem;
+    }
+    .right-column {
+      padding-right: 20%;
+      max-width: 60rem;
+    }
+  }
 `;
 export default HomeStyles;
 

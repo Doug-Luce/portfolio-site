@@ -19,7 +19,7 @@ class Project extends React.Component {
     // On the initial load of the page let's set the id to the correct
     // id passed into the url bar. Let's also set the project count to
     // show how many projects have been passed into the page.
-    this.setState({currentId: parseInt(this.props.match.params.id)});
+    this.setState({currentId: parseInt(this.props.match.params.id, 10)});
     this.setState({projectCount: projects.length});
   }
 
@@ -37,7 +37,7 @@ class Project extends React.Component {
     let projectContent = document.getElementById('project-content');
     projectContent.className = 'animated fadeIn';
     projectContent.style.animation = 'none';
-    projectContent.offsetHeight;
+    projectContent.offsetHeight = '';
     projectContent.style.animation = null;
 
     const limit = this.state.currentId + 1;
@@ -62,7 +62,7 @@ class Project extends React.Component {
     let projectContent = document.getElementById('project-content');
     projectContent.className = 'animated fadeIn';
     projectContent.style.animation = 'none';
-    projectContent.offsetHeight;
+    projectContent.offsetHeight = '';
     projectContent.style.animation = null;
 
     if(this.state.currentId === 0 || this.state.currentId < 0) {
@@ -77,7 +77,6 @@ class Project extends React.Component {
   render() {
     return(
       <div>
-        {/* <p>{dump(projects[this.state.currentId])}</p> */}
         <ProjectPage props={projects[this.state.currentId]} goLeft={this.navigateLeft} goRight={this.navigateRight}/>
       </div>
     );

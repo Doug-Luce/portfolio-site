@@ -2,7 +2,6 @@ import React from "react";
 import ContactCard from '../components/ContactCard';
 import ContactForm from '../components/ContactForm';
 import styled from 'styled-components';
-import media from 'styled-media-query';
 
 const Div = styled.section`
   display:flex;
@@ -11,14 +10,13 @@ const Div = styled.section`
   padding-top: 3rem;
   width: 100%;
 
-  ${media.lessThan('medium')`
-    /* screen width is less than 768px (medium) */
+  @media (max-width: 768px) {
     align-items: center;
     flex-direction:column;
     section {
       margin-bottom: 4rem;
     }
-  `}
+  }
 `;
 
 const Contact = (props) => (

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import * as palette from '../color';
-import media from 'styled-media-query';
 
 const NavStyles = styled.nav`
   align-items: center;
@@ -102,8 +101,7 @@ const NavStyles = styled.nav`
     min-width: 50px;
   }
 
-   ${media.lessThan('medium')`
-    /* screen width is less than 768px (medium) */
+  @media (max-width: 768px) {
     img {
       display: flex;
     }
@@ -118,17 +116,16 @@ const NavStyles = styled.nav`
     h4 {
       margin: 5%;
     }
-  `}
+  }
 
-  ${media.between('small', 'medium')`
+  @media (min-width: 450px and max-width: 768px) {
     .chat-button {
       margin-left: 5rem;
     }
     img {
       margin-right: 5%;
     }
-  `}
-
+  }
 `;
 
 export default NavStyles;
