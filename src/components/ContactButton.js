@@ -16,7 +16,7 @@ const ContactButton = styled.button`
   text-align: center;
   text-shadow: 0 1px 1px rgba(0,0,0,0.50);
 
-  &&:hover {
+  /* &&:hover {
     cursor: pointer;
     box-shadow: 2px 2px 8px ${palette.lightBlue};
     transition: all .4s ease;
@@ -26,28 +26,7 @@ const ContactButton = styled.button`
     box-shadow: none;
     box-shadow:         inset 0 0 2px ${palette.black};
     transform: translate(0, 7px);
-  }
+  } */
 `;
-
-// const ContactButton = styled.button`
-//   /* background-image: radial-gradient(48% -44%, #32A2BB 59%, #1787A0 100%); */
-//   /* background-image: ${palette.navGradient}; */
-//   background-color: transparent;
-//   border-color: ${palette.orange};
-//   box-shadow: 2px 2px 2px 0 #386C89;
-//   border-radius: 5px;
-//   border-width: 3px;
-//   color: ${palette.orange};
-//   font-family:  Tahoma, Geneva, Verdana, sans-serif;
-//   font-size: 18px;
-//   font-weight: 500;
-//   padding: .5rem 2rem .5rem 2rem;
-//   text-align: center;
-//   text-shadow: 0 1px 1px ${palette.grey};
-
-//   &&:hover {
-//     display: none;
-//   }
-// `;
 
 export default ContactButton;
