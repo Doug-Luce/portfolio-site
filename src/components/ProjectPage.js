@@ -48,7 +48,7 @@ const ProjectInfoStyles = styled.div`
 
 const ProjectPage = ({props, goLeft, goRight}) => {
   return(
-    <div id="project-content">
+    <div>
     <Section>
       <ProjectInfoStyles>
         <H2>{props.projectName}</H2>
@@ -61,7 +61,7 @@ const ProjectPage = ({props, goLeft, goRight}) => {
         <H3>DESCRIPTION</H3>
       </ProjectInfoStyles>
       <div>
-        <img alt="This is a project that Doug Luce built."src={props.imageUrl} />
+        <img  id="project-content" alt="This is a project that Doug Luce built."src={props.imageUrl} />
         <div id="top-nav">
           <ProjectNav  goLeft={goLeft} goRight={goRight} projectName={props.projectName} />
         </div>
