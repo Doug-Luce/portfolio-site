@@ -8,6 +8,10 @@ const baseStyles = () => injectGlobal`
     margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
+    ::selection {
+      background: ${palette.lightBlue};
+      color: white;
+    }
   }
 
   body {
