@@ -3,10 +3,11 @@ import * as palette from '../color';
 
 const NavStyles = styled.nav`
   align-items: center;
-  height: 3.5rem;
   background-image: ${palette.navGradient};
   display: flex;
+  height: 3.5rem;
   justify-content: space-between;
+  min-width: 400px;
 
   #logo {
     color:${palette.lightCream};
@@ -14,8 +15,8 @@ const NavStyles = styled.nav`
   }
 
   #logo:hover {
-    text-shadow:none;
     background-image: none;
+    text-shadow:none;
   }
 
   li a {
@@ -25,12 +26,12 @@ const NavStyles = styled.nav`
   }
 
   li a:hover {
-    text-shadow: 2px 2px 10px ${palette.black};
     background-image: linear-gradient(120deg, #F88D35 0%, #32A2BB 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 100%;
     padding-bottom: 6px;
+    text-shadow: 2px 2px 10px ${palette.black};
   }
 
   h4 {

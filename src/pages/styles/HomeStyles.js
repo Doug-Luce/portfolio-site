@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const HomeStyles = styled.div`
   .left {
-    padding-left: 5%;
     width: 30rem;
   }
 
@@ -16,7 +15,6 @@ const HomeStyles = styled.div`
     padding-bottom: 2rem;
   }
   .right {
-    padding-right: 5%;
     width: 28rem;
   }
 
@@ -28,6 +26,12 @@ const HomeStyles = styled.div`
 
   .right p:first-child {
     padding-bottom: 1.5rem;
+  }
+
+  @media (max-width: 850px) {
+    .left, .right {
+      padding: 0 5% 0 5%;
+    }
   }
 
   @media (max-width: 1085px) {

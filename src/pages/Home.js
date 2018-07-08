@@ -11,12 +11,29 @@ const Div = styled.section`
   padding-top: 9rem;
   padding-bottom: 5rem;
 
+  .mobile-contact {
+    display: none;
+    padding-top: 25px;
+  }
+  /* @media (max-width: 400px) {
+    display: block;
+  } */
+
   @media (max-width: 768px) {
     align-items: center;
+    /* display: block; */
     flex-direction:column;
     padding-top: 0;
     .left, .right {
       padding: 0;
+    }
+    .home-contact {
+      display:none;
+    }
+    .mobile-contact {
+      display: flex;
+    align-items: center;
+    justify-content: center;
     }
   }
 `;
@@ -34,7 +51,7 @@ const Home = (props) => (
           React, Meteor, SQL, MongoDB,
           more…
       </H2>
-      <div>
+      <div className="home-contact">
         <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
       </div>
     </div>
@@ -52,6 +69,9 @@ const Home = (props) => (
             look forward to hearing from you!
       </P>
     </div>
+    <div className="mobile-contact">
+        <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
+      </div>
   </Div>
   </HomeStyles>
 );
