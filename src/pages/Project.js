@@ -31,6 +31,8 @@ class Project extends React.Component {
     // On the initial load of the page let's set the id to the correct
     // id passed into the url bar. Let's also set the project count to
     // show how many projects have been passed into the page.
+    // The event listener here detects keydown events and changes the
+    // page depending on which arrow is clicked.
     this.setState({currentId: parseInt(this.props.match.params.id, 10)});
     this.setState({projectCount: projects.length});
     document.addEventListener("keydown", this.keyDown, false);
