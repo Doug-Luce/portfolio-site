@@ -47,7 +47,7 @@ const Home = (props) => (
           I’m a Software
           Developer.
       </H1>
-      <H2>Full Stack, JavaScript, Node,
+      <H2>JavaScript, Node,
           React, Meteor, SQL, MongoDB,
           more…
       </H2>
@@ -56,18 +56,37 @@ const Home = (props) => (
       </div>
     </div>
     <div className="right">
-      <P> I’m currently seeking employment as a Web
+      <P> I’m currently seeking employment as a Software
             Developer, and this is my portfolio. Thanks for
             taking the time to look it over, and look at my
-            projects. This portfolio showcases my development
-            skills, and also my design skills.
+            projects. I built this site using modern web development
+            methods to showcase my skills, as well as a place
+            for me to store projects that I build. It also showcases
+            my sense of design. Thanks for taking a look!
       </P>
 
-      <P> I am currently completing my Bachelor’s degree in
+      {/* <P> I am currently completing my Bachelor’s degree in
             Software Development, and have also taught
             myself the majority of my programming skills. I
             look forward to hearing from you!
-      </P>
+      </P> */}
+      <P>I've completed my AAS and almost finished with my 
+        Bachelor’s degree in Software Development. I started
+        my career in IT, and have spent 13+ years in that field.
+        I decided that ultimately I want to build web applications
+        professionally, and decided to spend my time learning it.</P>
+      {/* <P> 
+        I've completed my AAS and almost finished with my 
+        Bachelor’s degree in Software Development. I started
+        my career in IT, and have spent 13+ years in that field.
+        I first started to program at a young age building scripts
+        for a game engine. Later in high school I focused my time
+        in C++ classes and a web building course. During my studies
+        toward my AAS I learned and became proficient with Python,
+        but decided that I really wanted to bulid web applications.
+        From then on I studied Web Development on my own until 
+        deciding I need my Bachelor's degree. 
+      </P> */}
     </div>
     <div className="mobile-contact">
         <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
