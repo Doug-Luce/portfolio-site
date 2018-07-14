@@ -8,6 +8,7 @@ class Project extends React.Component {
     // Binding the this to both methods.
     this.navigateRight = this.navigateRight.bind(this);
     this.navigateLeft = this.navigateLeft.bind(this);
+    this.keyDown = this.keyDown.bind(this);
 
     this.state = {
       currentId: 0,
@@ -15,12 +16,24 @@ class Project extends React.Component {
     };
   }
 
+  keyDown(event) {
+    if(event.keyCode === 37) {
+      console.log('Left Arrow press.');
+      this.navigateLeft();
+    }
+    else if(event.keyCode === 39) {
+      console.log('Right arrow pressed.');
+      this.navigateRight();
+    }
+  };
+
   componentDidMount() {
     // On the initial load of the page let's set the id to the correct
     // id passed into the url bar. Let's also set the project count to
     // show how many projects have been passed into the page.
-    this.setState({currentId: parseInt(this.props.match.params.id)});
+    this.setState({currentId: parseInt(this.props.match.params.id, 10)});
     this.setState({projectCount: projects.length});
+    document.addEventListener("keydown", this.keyDown, false);
   }
 
   navigateRight() {
@@ -77,7 +90,6 @@ class Project extends React.Component {
   render() {
     return(
       <div>
-        {/* <p>{dump(projects[this.state.currentId])}</p> */}
         <ProjectPage props={projects[this.state.currentId]} goLeft={this.navigateLeft} goRight={this.navigateRight}/>
       </div>
     );

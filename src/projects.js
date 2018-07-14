@@ -73,6 +73,51 @@
     imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394931/MacBook_-_Calculator_kwoj9n.png',
     slug: 'calculator'
   },
+  {
+    id: 8,
+    projectName: 'Fitness 101',
+    projectType: 'Freelance',
+    category: 'Website',
+    description: `I do freelance for a few Portland, OR companies. This is a website I created for Fitness101.us`,
+    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1531283206/MacBook_-_Fitness101_j3dapb.png',
+    slug: 'fitness101'
+  },
+  {
+    id: 9,
+    projectName: 'Home DNA',
+    projectType: 'Freelance',
+    category: 'Website, Bootstrap',
+    description: `I worked as a freelancer for HomeDNA and built a few pages using bootstrap for their site, selling home DNA kits.`,
+    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1531284420/MacBook_-_HomeDNA_gkpoij.png',
+    slug: 'homedna'
+  },
+  {
+    id: 10,
+    projectName: 'Pi Grrl',
+    projectType: 'Hobby Electronics',
+    category: 'Electronics',
+    description: `I built this project using a kit from Adafruit, and it was the first project I've completed like this. I showcase this project to show my attention to detail allowed me to meticulously follow the directions and achieve the intended results. After this part of the project, I 3d printed the case.`,
+    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394971/MacBook_-_PiGrrl_zsrdkf.png',
+    slug: 'pigrrl'
+  },
+  {
+    id: 11,
+    projectName: 'Score Keeper',
+    projectType: 'Meteor, Node, JavaScript, React',
+    category: 'Web App',
+    description: `This is a score keeper application I built using MeteorJS and React. I learned a lot about Meteor building this application, and used the knowledge I learned buliding this application to build a Secret Santa app that our family used for Christmas.`,
+    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1531285249/MacBook_-_Score_Keep_kelezu.png',
+    slug: 'score-keeper'
+  },
+  {
+    id: 12,
+    projectName: 'Secret Santa',
+    projectType: 'Meteor, Node, JavaScript, React',
+    category: 'Web App',
+    description: `This is a Meteor project I built to manager our family's Secret Santa gift exchange in 2017. At some point I would like to add more to this project and open source it.`,
+    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394960/MacBook_-_Secret_Santa_bgiet8.png',
+    slug: 'secret-santa'
+  },
 ];
 
 export default projects;

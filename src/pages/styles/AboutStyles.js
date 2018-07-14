@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 import * as palette from '../../components/color';
-import media from 'styled-media-query';
 
 const AboutStyles = styled.div`
-
   .about-page {
     display: flex;
   }
@@ -76,10 +74,9 @@ const AboutStyles = styled.div`
     padding-top: 3rem;
   }
 
-  ${media.lessThan('medium')`
+  @media (max-width: 768px) {
     .about, .education, .experience {
       flex-direction: column;
-      /* padding-left: 6rem; */
       padding-left: 3rem;
     }
 
@@ -90,9 +87,7 @@ const AboutStyles = styled.div`
       padding-right: 0;
       padding-left: 0;
     }
-    .row {
-      /* padding-left: 3rem; */
-    }
+
     .top-row {
       flex-direction: column-reverse;
     }
@@ -100,8 +95,7 @@ const AboutStyles = styled.div`
       padding-left: 0;
       align-items: center;
     }
-  `}
-
+  }
 `;
 
 export default AboutStyles;
