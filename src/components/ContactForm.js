@@ -78,6 +78,23 @@ const TextArea = styled.textarea`
 `;
 
 class ContactForm extends React.Component {
+  constructor() {
+    super();
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+
+    fetch('https://electric-packet.glitch.me/', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({})
+    });
+  }
   render() {
     return (
       <Container className="animated fadeIn">
@@ -86,15 +103,16 @@ class ContactForm extends React.Component {
           about your project or company, and would be more than happy to discuss it. Please leave a detailed message
           and I'll get back to you as soon as I can. Thanks!
         </Copy>
-        <Form>
+        <Form onSubmit={this.handleSubmit}>
           <Label for="name">Name<sup>&#8902;</sup></Label>
           <Input id="name" name="name" type="text" required placeholder="Your name&#8230;"></Input>
           <Label for="email">E-Mail<sup>&#8902;</sup></Label>
           <Input id="email" name="email" type="email" required placeholder="Your E-Mail&#8230; "></Input>
           <Label for="message">Message</Label>
           <TextArea id="message" name="message" type="text" placeholder="Your message for me&#8230; "></TextArea>
+          <SubmitButton>Contact Me</SubmitButton>
         </Form>
-        <SubmitButton>Contact Me</SubmitButton>
+
       </Container>
     );
   }
