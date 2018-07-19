@@ -4,12 +4,12 @@ import HomeStyles from './styles/HomeStyles';
 import styled from 'styled-components';
 import ContactButton from '../components/ContactButton';
 
-const Div = styled.section`
+const Div = styled.div`
   display:flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 9rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 
   .mobile-contact {
     display: none;
@@ -70,13 +70,13 @@ const Home = (props) => (
             myself the majority of my programming skills. I
             look forward to hearing from you!
       </P> */}
-      <P>I've completed my AAS and almost finished with my 
+      <P>I've completed my AAS and almost finished with my
         Bachelor’s degree in Software Development. I started
         my career in IT, and have spent 13+ years in that field.
         I decided that ultimately I want to build web applications
         professionally, and decided to spend my time learning it.</P>
-      {/* <P> 
-        I've completed my AAS and almost finished with my 
+      {/* <P>
+        I've completed my AAS and almost finished with my
         Bachelor’s degree in Software Development. I started
         my career in IT, and have spent 13+ years in that field.
         I first started to program at a young age building scripts
@@ -84,8 +84,8 @@ const Home = (props) => (
         in C++ classes and a web building course. During my studies
         toward my AAS I learned and became proficient with Python,
         but decided that I really wanted to bulid web applications.
-        From then on I studied Web Development on my own until 
-        deciding I need my Bachelor's degree. 
+        From then on I studied Web Development on my own until
+        deciding I need my Bachelor's degree.
       </P> */}
     </div>
     <div className="mobile-contact">
