@@ -97,7 +97,7 @@
     projectType: 'Hobby Electronics',
     category: 'Electronics',
     description: `I built this project using a kit from Adafruit, and it was the first project I've completed like this. I showcase this project to show my attention to detail allowed me to meticulously follow the directions and achieve the intended results. After this part of the project, I 3d printed the case.`,
-    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394971/MacBook_-_PiGrrl_zsrdkf.png',
+    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1531284809/MacBook_-_PiGrrl_yygmij.png',
     slug: 'pigrrl'
   },
   {
