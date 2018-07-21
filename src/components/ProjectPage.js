@@ -66,8 +66,6 @@ const ProjectPage = ({props, goLeft, goRight}) => {
         <H3>PROJECT NAME</H3>
         <H2>{props.projectType}</H2>
         <H3>PROJECT TYPE</H3>
-        <H2>{props.category}</H2>
-        <H3>CATEGORY</H3>
         <H2>{props.description}</H2>
         <H3>DESCRIPTION</H3>
       </ProjectInfoStyles>
