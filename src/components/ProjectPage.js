@@ -11,6 +11,12 @@ const Section = styled.section`
   padding-top: 3rem;
   padding-left: 5%;
 
+  #project-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
   #top-nav {
     display: none;
   }
@@ -43,10 +49,12 @@ const ProjectInfoStyles = styled.div`
     color: ${palette.lightGrey};
     font-size: 1.3rem;
     padding-bottom: 1rem;
+    line-height: 0;
   }
 `;
 
 const ProjectPage = ({props, goLeft, goRight}) => {
+  console.log(JSON.stringify(props));
   return(
     <div>
     <Section>
@@ -62,6 +70,7 @@ const ProjectPage = ({props, goLeft, goRight}) => {
       </ProjectInfoStyles>
       <div>
         <img id="project-content" alt="This is a project that Doug Luce built."src={props.imageUrl} />
+        <a id="project-link" href={props.link}>{props.projectName}</a>
         <div id="top-nav">
           <ProjectNav  goLeft={goLeft} goRight={goRight} projectName={props.projectName} />
         </div>
