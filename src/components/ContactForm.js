@@ -83,18 +83,18 @@ class ContactForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
+  // handleSubmit(event) {
+  //   event.preventDefault();
 
-    fetch('https://electric-packet.glitch.me/', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({})
-    });
-  }
+  //   fetch('https://electric-packet.glitch.me/', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Accept': 'application/json',
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({})
+  //   });
+  // }
   render() {
     return (
       <Container className="animated fadeIn">
@@ -103,7 +103,7 @@ class ContactForm extends React.Component {
           about your project or company, and would be more than happy to discuss it. Please leave a detailed message
           and I'll get back to you as soon as I can. Thanks!
         </Copy>
-        <Form onSubmit={this.handleSubmit} data-netlify="true">
+        <Form method="POST" netlify>
           <Label for="name">Name<sup>&#8902;</sup></Label>
           <Input id="name" name="name" type="text" required placeholder="Your name&#8230;"></Input>
           <Label for="email">E-Mail<sup>&#8902;</sup></Label>
