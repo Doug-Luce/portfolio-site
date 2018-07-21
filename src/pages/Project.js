@@ -58,7 +58,7 @@ class Project extends React.Component {
     const limit = this.state.currentId + 1;
     if(!(limit === this.state.projectCount)) {
       // Set the url to /projects/currentId + 1
-      this.props.push(`/projects/${this.state.currentId + 1}`);
+      this.props.history.push(`/projects/${this.state.currentId + 1}`);
       // Change the state the current id to the id + 1
       this.setState({currentId: this.state.currentId + 1});
     } else {
