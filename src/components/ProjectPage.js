@@ -15,6 +15,9 @@ const Section = styled.section`
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-family: Jura;
+    color: ${palette.black};
+    font-size: 1.5rem;
   }
 
   #top-nav {
