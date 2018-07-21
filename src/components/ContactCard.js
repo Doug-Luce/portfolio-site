@@ -39,10 +39,10 @@ class ContactCard extends React.Component {
   render() {
     return (
       <Section className="animated fadeIn">
-        <Img src="http://res.cloudinary.com/lucedesign/image/upload/v1530120006/dougs_at_disney_uw4sdn.jpg"/>
+        <Img src="https://res.cloudinary.com/lucedesign/image/upload/v1530120006/dougs_at_disney_uw4sdn.jpg"/>
         <Bio>
           <H2>Doug Luce</H2>
-          <H3>Dad, husband, Software Developer, and all around nice guy. 
+          <H3>Dad, husband, Software Developer, and all around nice guy.
           </H3>
         </Bio>
         <SocialStyles secondary><SocialButtons secondary/></SocialStyles>
