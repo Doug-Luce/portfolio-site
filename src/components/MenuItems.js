@@ -15,10 +15,10 @@ class MenuItems extends React.Component {
     return(
       <MenuItemsStyle>
         <ul>
-          <li onClick={() => this.clickHandler('/#/')} className="home"><span id="home">HOME</span></li>
-          <li onClick={() => this.clickHandler('/#/about')} className="about"><a href="/about"><span id="about">ABOUT</span></a></li>
-          <li onClick={() => this.clickHandler('/#/projects')} className="projects"><a href="/projects"><span id="projects">PROJECTS</span></a></li>
-          <li onClick={() => this.clickHandler('/#/contact')} className="contact"><a href="/contact"><span id="contact">CONTACT</span></a></li>
+          <li onClick={() => this.clickHandler('/')} className="home"><span id="home">HOME</span></li>
+          <li onClick={() => this.clickHandler('/about')} className="about"><a href="/about"><span id="about">ABOUT</span></a></li>
+          <li onClick={() => this.clickHandler('/projects')} className="projects"><a href="/projects"><span id="projects">PROJECTS</span></a></li>
+          <li onClick={() => this.clickHandler('/contact')} className="contact"><a href="/contact"><span id="contact">CONTACT</span></a></li>
         </ul>
       </MenuItemsStyle>
     );
