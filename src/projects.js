@@ -98,7 +98,7 @@
     description: `I worked as a freelancer for HomeDNA and built a few pages using bootstrap for their site, selling home DNA kits.`,
     imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1531284420/MacBook_-_HomeDNA_gkpoij.png',
     slug: 'homedna',
-    link: 'https://90f1d7e613d7468992d5a35a03debf37.production.codepen.codes/'
+    link: 'https://codepen.io/douglasluce/project/full/AEYkWg/'
   },
   {
     id: 10,
