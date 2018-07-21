@@ -1,6 +1,9 @@
 import React from 'react';
 import MenuItemsStyle from './styles/MenuItemsStyles';
 import { withRouter } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory'
+
+
 
 class MenuItems extends React.Component {
   constructor(props) {
@@ -8,6 +11,7 @@ class MenuItems extends React.Component {
     this.clickHandler = this.clickHandler.bind(this);
   }
   clickHandler(path) {
+    this.props.history = createHistory();
     this.props.history.push(path);
     this.props.onClick();
   }
