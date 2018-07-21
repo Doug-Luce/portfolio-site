@@ -11,7 +11,7 @@ const NavStyles = styled.nav`
 
   @font-face {
     font-family: "Jura";
-    src: url("fonts/jura-regular-webfont.woff2") format("woff2");
+    src: url("/src/components/styles/fonts/jura-regular-webfont.woff2") format("woff2");
   }
 
   #logo {
