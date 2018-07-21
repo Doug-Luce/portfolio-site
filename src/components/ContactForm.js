@@ -72,6 +72,8 @@ const TextArea = styled.textarea`
   font-size: 1.3rem;
   height: 3rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   outline: 0;
   width: 18rem;
 
@@ -111,7 +113,7 @@ class ContactForm extends React.Component {
           <Input id="email" name="email" type="email" required placeholder="Your E-Mail&#8230; "></Input>
           <Label for="message">Message</Label>
           <TextArea id="message" name="message" type="text" placeholder="Your message for me&#8230; "></TextArea>
-          <SubmitButton>Contact Me</SubmitButton>
+          <SubmitButton>Submit</SubmitButton>
         </Form>
 
       </Container>
