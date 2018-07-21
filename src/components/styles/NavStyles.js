@@ -9,6 +9,11 @@ const NavStyles = styled.nav`
   justify-content: space-between;
   min-width: 400px;
 
+  @font-face {
+    font-family: "Jura";
+    src: url("fonts/jura-regular-webfont.woff2") format("woff2");
+  }
+
   #logo {
     color:${palette.lightCream};
     text-decoration: none;
