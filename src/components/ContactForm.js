@@ -80,7 +80,7 @@ const TextArea = styled.textarea`
 class ContactForm extends React.Component {
   constructor() {
     super();
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   // handleSubmit(event) {
