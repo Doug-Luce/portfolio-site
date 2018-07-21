@@ -79,7 +79,7 @@
     description: `I do freelance for a few Portland, OR companies. This is a website I created for Fitness101.us`,
     imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1531283206/MacBook_-_Fitness101_j3dapb.png',
     slug: 'fitness101',
-    link: 'https://codepen.io/douglasluce/pen/vxqgBJ'
+    link: 'https://www.fitness101.us/'
   },
   {
     id: 9,
