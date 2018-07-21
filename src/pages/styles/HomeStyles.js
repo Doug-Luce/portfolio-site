@@ -36,7 +36,7 @@ const HomeStyles = styled.div`
 
   @media (max-width: 1085px) {
     .left, .right {
-      width: 25rem;
+      width: 22rem;
     }
     .right p{
       font-size: 18px;
