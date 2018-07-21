@@ -73,9 +73,14 @@ const ProjectPage = ({props, goLeft, goRight}) => {
       </ProjectInfoStyles>
       <div>
         <a href={props.link}><img id="project-content" alt="This is a project that Doug Luce built."src={props.imageUrl} /></a>
-        <a id="project-link" href={props.link}>{props.projectName}</a>
+        {props.link ? (
+        <a id="project-link" href={props.link}>View this project</a>
+        ) : (
+        ''
+        )}
+
         <div id="top-nav">
-          <ProjectNav  goLeft={goLeft} goRight={goRight} projectName={props.projectName} />
+          <ProjectNav goLeft={goLeft} goRight={goRight} projectName={props.projectName} />
         </div>
       </div>
     </Section>
