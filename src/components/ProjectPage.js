@@ -72,7 +72,7 @@ const ProjectPage = ({props, goLeft, goRight}) => {
         <H3>DESCRIPTION</H3>
       </ProjectInfoStyles>
       <div>
-        <img id="project-content" alt="This is a project that Doug Luce built."src={props.imageUrl} />
+        <a href={props.link}><img id="project-content" alt="This is a project that Doug Luce built."src={props.imageUrl} /></a>
         <a id="project-link" href={props.link}>{props.projectName}</a>
         <div id="top-nav">
           <ProjectNav  goLeft={goLeft} goRight={goRight} projectName={props.projectName} />
