@@ -48,7 +48,7 @@ const About = (props) => (
     <div className="row interest">
       <P className="interested"><strong>Interested in working with me?</strong></P>
     </div>
-      <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
+      <ContactButton onClick={() => props.history.push('/#/contact')}>Contact Me</ContactButton>
   </AboutStyles>
 );
 

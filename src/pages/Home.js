@@ -52,7 +52,7 @@ const Home = (props) => (
           more…
       </H2>
       <div className="home-contact">
-        <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
+        <ContactButton onClick={() => props.history.push('/#/contact')}>Contact Me</ContactButton>
       </div>
     </div>
     <div className="right">
@@ -89,7 +89,7 @@ const Home = (props) => (
       </P> */}
     </div>
     <div className="mobile-contact">
-        <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
+        <ContactButton onClick={() => props.history.push('/#/contact')}>Contact Me</ContactButton>
       </div>
   </Div>
   </HomeStyles>
