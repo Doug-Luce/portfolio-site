@@ -2,17 +2,13 @@ import styled from 'styled-components';
 import * as palette from '../color';
 
 const NavStyles = styled.nav`
+  @import url('https://fonts.googleapis.com/css?family=Jura');
   align-items: center;
   background-image: ${palette.navGradient};
   display: flex;
   height: 3.5rem;
   justify-content: space-between;
   min-width: 400px;
-
-  @font-face {
-    font-family: "Jura";
-    src: url("/src/components/styles/fonts/jura-regular-webfont.woff2") format("woff2");
-  }
 
   #logo {
     color:${palette.lightCream};
