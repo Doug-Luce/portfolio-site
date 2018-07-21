@@ -22,7 +22,7 @@ const ContactInfo = styled.div`
     display: flex;
     font-family:  Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2rem;
-    padding: 0 0 .5rem 2rem;
+    padding: 0 0 2rem 2rem;
   }
 `;
 const Img = styled.img`
