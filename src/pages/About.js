@@ -18,11 +18,11 @@ const About = (props) => (
         <H3>About:</H3>
       </div>
         <div className="about-p">
-          <P>I currently work as an IT Manger for Entercom Communications,
+          <P>I currently work as an IT Manager for Entercom Communications,
                 and working on finishing my Bachelor's degree in Software Development. I have a voracious thirst for all things
                 programming, and love spending time learning new skills, and building new projects.</P>
           <P>Outside of work I enjoy the company of my wife and son. We like to enjoy the outdoors as much as we can, and camp
-              often. I can also be found tinkering, making things, perfectings a cup of coffee, gaming, or of course programming.
+              often. I can also be found tinkering, making things, perfecting a cup of coffee, gaming, or of course programming.
           </P>
         </div>
       </div>
