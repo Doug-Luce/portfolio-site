@@ -20,9 +20,9 @@ const Section = styled.section`
     font-size: 1.5rem;
   }
 
-  #top-nav {
+  /* #top-nav {
     display: none;
-  }
+  } */
 
   img {
     width: 100%;
@@ -82,9 +82,9 @@ const ProjectPage = ({props, goLeft, goRight}) => {
         </div>
       </div>
     </Section>
-    <div id="bottom-nav">
+    {/* <div id="bottom-nav">
       <ProjectNav goLeft={goLeft} goRight={goRight} projectName={props.projectName} />
-    </div>
+    </div> */}
     </div>
   );
 };
