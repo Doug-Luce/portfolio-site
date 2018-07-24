@@ -30,8 +30,8 @@ const Section = styled.section`
   }
 
   .spacing {
-    height: 10px;
-    width: 10px;
+    height: 20px;
+    width: 1px;
   }
 
   @media (max-width: 1240px) {
