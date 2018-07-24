@@ -21,7 +21,7 @@ const projects = [
     id: 2,
     projectName: 'Stratedg360',
     projectType: 'Freelance',
-    description: 'I was contacte by Stratedg360 to help fix their website built with Adobe Muse. There were many issues with the responsive design of the site, so I was able to rebuild this site for the client. This client continues to rely on me for all of their web development needs.',
+    description: 'I was contacted by Stratedg360 to help fix their website built with Adobe Muse. There were many issues with the responsive design of the site, so I was able to rebuild this site for the client. This client continues to rely on me for all of their web development needs.',
     imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394956/MacBook_Stratedg_jqqoxx.png',
     slug: 'stratedg360',
     link: 'http://stratedg360.com/'
