@@ -30,7 +30,7 @@ const Section = styled.section`
   }
 
   .spacing {
-    height: 20px;
+    height: 25px;
     width: 1px;
   }
 
