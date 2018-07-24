@@ -29,6 +29,11 @@ const Section = styled.section`
     height: auto;
   }
 
+  .spacing {
+    height: 10px;
+    width: 10px;
+  }
+
   @media (max-width: 1240px) {
     min-height: 910px;
   }
