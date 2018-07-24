@@ -74,7 +74,7 @@ const ProjectPage = ({props, goLeft, goRight}) => {
         {props.link ? (
         <a id="project-link" href={props.link}>View this project</a>
         ) : (
-        ''
+        '       '
         )}
 
         <div id="top-nav">
