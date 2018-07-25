@@ -19,7 +19,7 @@ const HomeStyles = styled.div`
   }
 
   .right p {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 35px;
     text-align: left;
   }
