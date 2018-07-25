@@ -7,7 +7,7 @@ import ProjectNav from '../components/ProjectNav';
 const Section = styled.section`
   display: flex;
   justify-content: space-around;
-  min-height: 700px;
+  padding-bottom: 3rem;
   padding-top: 3rem;
   padding-left: 5%;
 
@@ -27,6 +27,10 @@ const Section = styled.section`
   img {
     width: 100%;
     height: auto;
+  }
+
+  .project-image {
+    padding-right: 5rem;
   }
 
   .spacing {
@@ -74,7 +78,7 @@ const ProjectPage = ({props, goLeft, goRight}) => {
         <H2>{props.description}</H2>
         <H3>DESCRIPTION</H3>
       </ProjectInfoStyles>
-      <div>
+      <div className="project-image">
         <a href={props.link}><img id="project-content" alt="This is a project that Doug Luce built."src={props.imageUrl} /></a>
         {props.link ? (
         <a id="project-link" href={props.link}>View this project</a>
