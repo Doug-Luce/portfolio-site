@@ -58,6 +58,7 @@ const Section = styled.section`
 
 const ProjectInfoStyles = styled.div`
   max-width: 40rem;
+  padding-right: 3rem;
   h3 {
     color: ${palette.lightGrey};
     font-size: 1.3rem;
