@@ -8,7 +8,7 @@ const Section = styled.section`
   display: flex;
   justify-content: space-around;
   padding-bottom: 3rem;
-  min-width: 420px;
+  min-width: 500px;
   padding-top: 3rem;
   padding-left: 5%;
 
