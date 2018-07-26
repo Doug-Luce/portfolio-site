@@ -3,7 +3,7 @@ const projects = [
     id: 0,
     projectName: 'Home DNA',
     projectType: 'Freelance',
-    description: `I worked as a freelancer for HomeDNA and built a few pages using bootstrap for their site, selling home DNA kits.`,
+    description: `HomeDNA contacted me needing a design from Adobe Muse built into a Bootstrap website. This project turned out great, and I've had repeat work from this client.`,
     imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1531284420/MacBook_-_HomeDNA_gkpoij.png',
     slug: 'homedna',
     link: 'https://github.com/Doug-Luce/HomeDNA'
@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     projectName: 'Fitness 101',
     projectType: 'Freelance',
-    description: `I do freelance for a few Portland, OR companies. This is a website I created for Fitness101.us`,
+    description: `This is a website I created for Fitness101.us. They contacted me needed an inexpensive website built, that work attract customers to their personal training company.`,
     imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1531283206/MacBook_-_Fitness101_j3dapb.png',
     slug: 'fitness101',
     link: 'https://www.fitness101.us/'
