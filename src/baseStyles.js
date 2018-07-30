@@ -8,6 +8,8 @@ const baseStyles = () => injectGlobal`
     margin: 0;
     padding: 0;
     text-rendering: optimizeLegibility;
+    -webkit-margin-before:0em;
+    -webkit-margin-after:0em;
     ::selection {
       background: ${palette.lightBlue};
       color: white;
