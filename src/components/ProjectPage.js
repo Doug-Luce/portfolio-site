@@ -30,10 +30,6 @@ const Section = styled.section`
     height: auto;
   }
 
-  .project-image {
-    padding-right: 5rem;
-  }
-
   .spacing {
     height: 29px;
     width: 1px;
@@ -41,6 +37,10 @@ const Section = styled.section`
 
   @media (max-width: 1240px) {
     min-height: 910px;
+
+    .project-image {
+      padding-right: 5rem;
+    }
   }
 
   @media (max-width: 1000px) {
@@ -53,6 +53,7 @@ const Section = styled.section`
       padding-top: 2rem;
       padding-bottom: 2rem;
     }
+
   }
 `;
 
