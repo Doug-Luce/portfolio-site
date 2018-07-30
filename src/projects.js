@@ -22,16 +22,16 @@ const projects = [
     projectName: 'Stratedg360',
     projectType: 'Freelance',
     description: 'I was contacted by Stratedg360 to help fix their website built with Adobe Muse. There were many issues with the responsive design of the site, so I was able to rebuild this site for the client. This client continues to rely on me for all of their web development needs.',
-    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394956/MacBook_Stratedg_jqqoxx.png',
+    imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394956/MacBook_Stratedg_jqqoxx.png',
     slug: 'stratedg360',
-    link: 'http://stratedg360.com/'
+    link: 'https://stratedg360.com/'
   },
   {
     id: 3,
     projectName: 'Sunset HVAC',
     projectType: 'Wordpress',
     description: `I work with Sunset Heating and Cooling on all of their website needs. Their business website is built in Wordpress, which I handled the design, build, and implementation for. I have also built a custom Wordpress plugin that handles an event that Sunset sponsors for foster Children to received Christmas gifts.`,
-    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394953/MacBook_-_Sunset_magbqe.png',
+    imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394953/MacBook_-_Sunset_magbqe.png',
     slug: 'sunset',
     link: 'https://sunsethc.com'
   },
@@ -40,7 +40,7 @@ const projects = [
     projectName: 'Daikin Sunset',
     projectType: 'Webpage design and build',
     description: `Sunset contacted me to build a site to brand their new Daikin installations separately from their traditionally HVAC offerings. I built and designed this site for Sunset to market their Daikin products.`,
-    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1532406019/MacBook_-_Daikin_zurad2.png',
+    imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1532406019/MacBook_-_Daikin_zurad2.png',
     slug: 'daikin-sunset',
     link: 'https://www.daikinsunset.com'
   },
@@ -58,7 +58,7 @@ const projects = [
     projectName: 'Weatherific',
     projectType: 'JavaScript, React, API',
     description: `This is a website I built using React to get the local weather. It uses the Open Weather Map API, as well as Google's Geocode API.`,
-    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394955/MacBook_-_Weatherific_edwcbx.png',
+    imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394955/MacBook_-_Weatherific_edwcbx.png',
     slug: 'weatherific',
     link: 'https://github.com/Doug-Luce/Weatherific'
   },
@@ -76,7 +76,7 @@ const projects = [
     projectName: 'URL Shortener',
     projectType: 'Microservices',
     description: `I built this project to showcase my skills as a backend developer. It allows you to shorten a URL converting the link to a UID, then allows navigation to that UID when visited.`,
-    imageUrl: 'http://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394954/MacBook_-_URL_Shortener_ueibun.png',
+    imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1530394954/MacBook_-_URL_Shortener_ueibun.png',
     slug: 'url-shortener',
     link: 'https://github.com/Doug-Luce/FCC-URL-Shortener'
   },
