@@ -12,7 +12,7 @@ const projects = [
     id: 1,
     projectName: 'Fitness 101',
     projectType: 'Freelance',
-    description: `This is a website I created for Fitness101.us. They contacted me needed an inexpensive website built, that work attract customers to their personal training company.`,
+    description: `This is a website I created for Fitness101.us. They contacted me needing an inexpensive website built, that would attract customers to their personal training company.`,
     imageUrl: 'https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_600/v1531283206/MacBook_-_Fitness101_j3dapb.png',
     slug: 'fitness101',
     link: 'https://www.fitness101.us/'
