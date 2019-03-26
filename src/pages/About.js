@@ -7,7 +7,7 @@ const About = (props) => (
   <AboutStyles className="about-page">
     <div className="row top-row">
       <div>
-        <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Portland, OR.</H2>
+        <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Phoenix, AZ.</H2>
       </div>
       <div className="portrait animated flipInX">
         <img alt="round self portrait of Doug Luce" className="column portrait" src="https://res.cloudinary.com/lucedesign/image/upload/v1529958549/Portrait_nrffzr.png" />
