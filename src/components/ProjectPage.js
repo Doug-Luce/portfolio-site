@@ -1,7 +1,5 @@
-import * as palette from '../components/color';
-import { H2, H3 } from '../components/typography';
+import { H3 } from '../components/typography';
 import React from 'react';
-import styled from 'styled-components';
 import ProjectNav from '../components/ProjectNav';
 import ProjectStyles from '../pages/styles/ProjectStyles';
 

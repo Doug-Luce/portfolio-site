@@ -27,7 +27,7 @@ const ContactInfo = styled.div`
 `;
 const Img = styled.img`
   width: 100%;
-  height: auto; */
+  height: auto;
 `;
 const Section = styled.section`
   background-color: ${palette.mediumBlue};
@@ -39,7 +39,7 @@ class ContactCard extends React.Component {
   render() {
     return (
       <Section className="animated fadeIn">
-        <Img src="https://res.cloudinary.com/lucedesign/image/upload/v1530120006/dougs_at_disney_uw4sdn.jpg"/>
+        <Img src="https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_400/v1553559110/rsz_dl-hs-05_fabyuj.jpg"/>
         <Bio>
           <H2>Doug Luce</H2>
           <H3>Dad, husband, Software Developer, and all around nice guy.

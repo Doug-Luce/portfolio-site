@@ -7,7 +7,7 @@ const About = (props) => (
   <AboutStyles className="about-page">
     <div className="row top-row">
       <div>
-        <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Portland, OR.</H2>
+        <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Phoenix, AZ.</H2>
       </div>
       <div className="portrait animated flipInX">
         <img alt="round self portrait of Doug Luce" className="column portrait" src="https://res.cloudinary.com/lucedesign/image/upload/v1529958549/Portrait_nrffzr.png" />
@@ -18,8 +18,7 @@ const About = (props) => (
         <H3>About:</H3>
       </div>
         <div className="about-p">
-          <P>I currently work as an IT Manager for Entercom Communications,
-                and working on finishing my Bachelor's degree in Software Development. I have a voracious thirst for all things
+          <P>I currently work as a Software Developer for KUBRA. I have a voracious thirst for all things
                 programming, and love spending time learning new skills, and building new projects.</P>
           <P>Outside of work I enjoy the company of my wife and son. We like to enjoy the outdoors as much as we can, and camp
               often. I can also be found tinkering, making things, perfecting a cup of coffee, gaming, or of course programming.
@@ -41,7 +40,8 @@ const About = (props) => (
         <H3>Experience:</H3>
       </div>
       <div>
-        <ul className="position-one"><li><strong>IT Manager</strong></li><li>Entercom Portland</li><li>Nov 2015 - Present</li></ul>
+      <ul className="position-one"><li><strong>Software Developer</strong></li><li>KUBRA</li><li>Sep 2018 - Present</li></ul>
+        <ul className="position-one"><li><strong>IT Manager</strong></li><li>Entercom Portland</li><li>Nov 2015 - Sep 2018</li></ul>
         <ul><li><strong>Computer Support Specialist</strong></li><li>Vivageek</li><li>Nov 2007 - Oct 2015</li></ul>
       </div>
     </div>
