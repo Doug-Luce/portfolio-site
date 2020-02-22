@@ -1,8 +1,8 @@
-import React from "react";
-import { H1, H2, P } from '../components/typography';
-import HomeStyles from './styles/HomeStyles';
-import styled from 'styled-components';
-import ContactButton from '../components/ContactButton';
+import React from 'react'
+import { H1, H2, P } from '../components/typography'
+import HomeStyles from './styles/HomeStyles'
+import styled from 'styled-components'
+import ContactButton from '../components/ContactButton'
 
 const Div = styled.div`
   display:flex;
@@ -36,42 +36,42 @@ const Div = styled.div`
     justify-content: center;
     }
   }
-`;
+`
 
 const Home = (props) => (
   <HomeStyles className="home-page animated fadeIn">
-  <Div>
-    <div className="left">
-      <H1>Hi,<br/>
+    <Div>
+      <div className="left">
+        <H1>Hi,<br/>
           I'm Doug,
           I’m a Software
           Developer.
-      </H1>
-      <H2>JavaScript, Node,
+        </H1>
+        <H2>JavaScript, Node,
           React, Meteor, SQL, MongoDB,
           more…
-      </H2>
-      <div className="home-contact">
-        <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
+        </H2>
+        <div className="home-contact">
+          <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
+        </div>
       </div>
-    </div>
-    <div className="right">
-      <P> I’m currently employed as a Software
+      <div className="right">
+        <P> I’m currently employed as a Software
             Developer, working on large scale products and
             for the utility industry. I reside in the Phoenix, AZ
             and I'm always up for helping with challenging technical
             problems.
-      </P>
-      <P> With 13+ years in the IT industry, I bring a wealth of knowledge
+        </P>
+        <P> With 13+ years in the IT industry, I bring a wealth of knowledge
         of how technical systems work together. I currently have 5 years of
         experience doing freelance web development, and a couple years of
         experience working with a large team of developers. </P>
-    </div>
-    <div className="mobile-contact">
+      </div>
+      <div className="mobile-contact">
         <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
       </div>
-  </Div>
+    </Div>
   </HomeStyles>
-);
+)
 
-export default Home;
+export default Home

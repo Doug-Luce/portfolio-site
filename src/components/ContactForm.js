@@ -1,29 +1,29 @@
-import React from 'react';
-import styled from 'styled-components';
-import * as palette from '../components/color.js';
-import { P } from './typography';
-import ContactButton from './ContactButton';
+import React from 'react'
+import styled from 'styled-components'
+import * as palette from '../components/color.js'
+import { P } from './typography'
+import ContactButton from './ContactButton'
 
 const SubmitButton = styled(ContactButton)`
   margin: 0 auto;
   display: flex;
-`;
+`
 
 const Copy = styled(P)`
   letter-spacing: .5px;
   line-height: 1.2rem;
   padding-bottom: 2rem;
   padding-top: 1rem;
-`;
+`
 const Container = styled.div`
   sup {
     font-size: 2.5rem;
   }
   max-width: 18rem;
-`;
+`
 const Form = styled.form`
   padding-bottom: 1rem;
-`;
+`
 const Label = styled.label`
   font-weight: 500;
   color: ${palette.black};
@@ -31,7 +31,7 @@ const Label = styled.label`
   font-size: 29px;
   line-height: 41px;
   text-align: left;
-`;
+`
 const Input = styled.input`
   ::placeholder {
     font-size: 1rem;
@@ -53,7 +53,7 @@ const Input = styled.input`
   height: 2.5rem;
   margin-bottom: 3rem;
   margin-top: 1rem;
-`;
+`
 
 const TextArea = styled.textarea`
   ::placeholder {
@@ -77,10 +77,10 @@ const TextArea = styled.textarea`
   outline: 0;
   width: 18rem;
 
-`;
+`
 
 class ContactForm extends React.Component {
-  render() {
+  render () {
     return (
       <Container className="animated fadeIn">
         <Label>Contact Me</Label>
@@ -100,8 +100,8 @@ class ContactForm extends React.Component {
         </Form>
 
       </Container>
-    );
+    )
   }
 }
 
-export default ContactForm;
+export default ContactForm

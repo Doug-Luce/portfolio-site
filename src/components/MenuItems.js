@@ -1,18 +1,20 @@
-import React from 'react';
-import MenuItemsStyle from './styles/MenuItemsStyles';
-import { withRouter } from 'react-router-dom';
+import React from 'react'
+import MenuItemsStyle from './styles/MenuItemsStyles'
+import { withRouter } from 'react-router-dom'
 
 class MenuItems extends React.Component {
-  constructor(props) {
-    super(props);
-    this.clickHandler = this.clickHandler.bind(this);
+  constructor (props) {
+    super(props)
+    this.clickHandler = this.clickHandler.bind(this)
   }
-  clickHandler(path) {
-    this.props.history.push(path);
-    this.props.onClick();
+
+  clickHandler (path) {
+    this.props.history.push(path)
+    this.props.onClick()
   }
-  render() {
-    return(
+
+  render () {
+    return (
       <MenuItemsStyle>
         <ul>
           <li onClick={() => this.clickHandler('/')} className="home"><span id="home">HOME</span></li>
@@ -21,9 +23,8 @@ class MenuItems extends React.Component {
           <li onClick={() => this.clickHandler('/contact')} className="contact"><a href="/contact"><span id="contact">CONTACT</span></a></li>
         </ul>
       </MenuItemsStyle>
-    );
+    )
   }
 }
 
-export default withRouter(MenuItems);
-
+export default withRouter(MenuItems)

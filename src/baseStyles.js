@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import * as palette from './components/color';
+import { createGlobalStyle } from 'styled-components'
+import * as palette from './components/color'
 
 const baseStyles = createGlobalStyle`
   * {
@@ -25,6 +25,6 @@ const baseStyles = createGlobalStyle`
     display: none;
   }
 }
-`;
+`
 
-export default baseStyles;
+export default baseStyles

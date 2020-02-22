@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const SocialStyles = styled.div`
   margin-top: 1.5rem;
@@ -23,6 +23,6 @@ const SocialStyles = styled.div`
     animation: rotateIn .7s;
   }
 
-`;
+`
 
-export default SocialStyles;
+export default SocialStyles

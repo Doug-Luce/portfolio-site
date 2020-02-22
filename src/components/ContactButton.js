@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import * as palette from '../components/color.js';
+import styled from 'styled-components'
+import * as palette from '../components/color.js'
 
 const ContactButton = styled.button`
   /* background-image: radial-gradient(48% -44%, #32A2BB 59%, #1787A0 100%); */
@@ -27,6 +27,6 @@ const ContactButton = styled.button`
     box-shadow:         inset 0 0 2px ${palette.black};
     transform: translate(0, 7px);
   }
-`;
+`
 
-export default ContactButton;
+export default ContactButton

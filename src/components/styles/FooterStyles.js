@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const FooterStyles = styled.footer`
   padding-top: 3%;
@@ -7,6 +7,6 @@ const FooterStyles = styled.footer`
     width: 260px;
     margin: 0 auto;
   }
-`;
+`
 
-export default FooterStyles;
+export default FooterStyles

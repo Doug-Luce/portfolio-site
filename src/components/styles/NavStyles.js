@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import * as palette from '../color';
+import styled from 'styled-components'
+import * as palette from '../color'
 
 const NavStyles = styled.nav`
   @import url('https://fonts.googleapis.com/css?family=Jura');
@@ -128,6 +128,6 @@ const NavStyles = styled.nav`
       margin-right: 5%;
     }
   }
-`;
+`
 
-export default NavStyles;
+export default NavStyles

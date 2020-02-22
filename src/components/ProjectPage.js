@@ -1,12 +1,11 @@
-import { H3 } from '../components/typography';
-import React from 'react';
-import ProjectNav from '../components/ProjectNav';
-import ProjectStyles from '../pages/styles/ProjectStyles';
+import { H3 } from '../components/typography'
+import React from 'react'
+import ProjectNav from '../components/ProjectNav'
+import ProjectStyles from '../pages/styles/ProjectStyles'
 
-
-const ProjectPage = ({props, goLeft, goRight}) => {
-  console.log(JSON.stringify(props));
-  return(
+const ProjectPage = ({ props, goLeft, goRight }) => {
+  console.log(JSON.stringify(props))
+  return (
     <ProjectStyles>
       <div className="project">
         <div className="project-copy">
@@ -25,9 +24,9 @@ const ProjectPage = ({props, goLeft, goRight}) => {
       <div className="project-image">
         <a href={props.link}><img id="project-content" alt="This is a project that Doug Luce built."src={props.imageUrl} /></a>
         {props.link ? (
-        <a id="project-link" href={props.link}>View this project</a>
+          <a id="project-link" href={props.link}>View this project</a>
         ) : (
-        <div className="spacing"></div>
+          <div className="spacing"></div>
         )}
 
         <div id="top-nav">
@@ -35,7 +34,7 @@ const ProjectPage = ({props, goLeft, goRight}) => {
         </div>
       </div>
     </ProjectStyles>
-  );
-};
+  )
+}
 
-export default ProjectPage;
+export default ProjectPage

@@ -1,5 +1,5 @@
-import * as palette from '../../components/color';
-import styled from 'styled-components';
+import * as palette from '../../components/color'
+import styled from 'styled-components'
 
 const ProjectStyles = styled.section`
   display: flex;
@@ -50,6 +50,6 @@ const ProjectStyles = styled.section`
     }
 
   }
-`;
+`
 
-export default ProjectStyles;
+export default ProjectStyles

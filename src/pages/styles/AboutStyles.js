@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import * as palette from '../../components/color';
+import styled from 'styled-components'
+import * as palette from '../../components/color'
 
 const AboutStyles = styled.div`
   .about-page {
@@ -96,6 +96,6 @@ const AboutStyles = styled.div`
       align-items: center;
     }
   }
-`;
+`
 
-export default AboutStyles;
+export default AboutStyles

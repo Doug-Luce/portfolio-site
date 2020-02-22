@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import { H2 } from './typography';
+import React from 'react'
+import styled from 'styled-components'
+import { H2 } from './typography'
 
 const Button = styled.button`
   background-repeat: no-repeat;
   background-color: transparent;
   border-color: transparent;
   padding: 1.3rem;
-`;
+`
 
 const Div = styled.div`
   align-items: center;
@@ -31,8 +31,7 @@ const Div = styled.div`
       min-width: 250px;
     }
   }
-`;
-
+`
 
 const ProjectNav = (props) => (
   <div>
@@ -42,6 +41,6 @@ const ProjectNav = (props) => (
       <Button id="right-button" onClick={props.goRight} />
     </Div>
   </div>
-);
+)
 
-export default ProjectNav;
+export default ProjectNav
