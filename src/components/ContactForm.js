@@ -4,12 +4,12 @@ import * as palette from '../components/color.js';
 import { P } from './typography';
 import ContactButton from './ContactButton';
 
-const SubmitButton = ContactButton.extend`
+const SubmitButton = styled(ContactButton)`
   margin: 0 auto;
   display: flex;
 `;
 
-const Copy = P.extend`
+const Copy = styled(P)`
   letter-spacing: .5px;
   line-height: 1.2rem;
   padding-bottom: 2rem;
@@ -80,23 +80,6 @@ const TextArea = styled.textarea`
 `;
 
 class ContactForm extends React.Component {
-  constructor() {
-    super();
-    // this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  // handleSubmit(event) {
-  //   event.preventDefault();
-
-  //   fetch('https://electric-packet.glitch.me/', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Accept': 'application/json',
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify({})
-  //   });
-  // }
   render() {
     return (
       <Container className="animated fadeIn">

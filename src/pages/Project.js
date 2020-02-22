@@ -52,7 +52,6 @@ class Project extends React.Component {
     let projectContent = document.getElementById('project-content');
     projectContent.className = 'animated fadeIn';
     projectContent.style.animation = 'none';
-    projectContent.offsetHeight;
     projectContent.style.animation = null;
 
     const limit = this.state.currentId + 1;
@@ -77,7 +76,6 @@ class Project extends React.Component {
     let projectContent = document.getElementById('project-content');
     projectContent.className = 'animated fadeIn';
     projectContent.style.animation = 'none';
-    projectContent.offsetHeight;
     projectContent.style.animation = null;
 
     if(this.state.currentId === 0 || this.state.currentId < 0) {

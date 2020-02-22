@@ -1,6 +1,5 @@
 const projects = [
   {
-    id: 0,
     projectName: 'Home DNA',
     projectType: 'Freelance',
     description: `HomeDNA contacted me needing a design from Adobe Muse built into a Bootstrap website. This project turned out great, and I've had repeat work from this client.`,
@@ -9,7 +8,6 @@ const projects = [
     link: 'https://github.com/Doug-Luce/HomeDNA'
   },
   {
-    id: 1,
     projectName: 'Fitness 101',
     projectType: 'Freelance',
     description: `This is a website I created for Fitness101.us. They contacted me needing an inexpensive website built, that would attract customers to their personal training company.`,
@@ -18,7 +16,6 @@ const projects = [
     link: 'https://www.fitness101.us/'
   },
   {
-    id: 2,
     projectName: 'Stratedg360',
     projectType: 'Freelance',
     description: 'I was contacted by Stratedg360 to help fix their website built with Adobe Muse. There were many issues with the responsive design of the site, so I was able to rebuild this site for the client. This client continues to rely on me for all of their web development needs.',
@@ -27,7 +24,6 @@ const projects = [
     link: 'https://stratedg360.com/'
   },
   {
-    id: 3,
     projectName: 'Sunset HVAC',
     projectType: 'Wordpress',
     description: `I work with Sunset Heating and Cooling on all of their website needs. Their business website is built in Wordpress, which I handled the design, build, and implementation for. I have also built a custom Wordpress plugin that handles an event that Sunset sponsors for foster Children to received Christmas gifts.`,
@@ -36,7 +32,6 @@ const projects = [
     link: 'https://sunsethc.com'
   },
   {
-    id: 4,
     projectName: 'Daikin Sunset',
     projectType: 'Webpage design and build',
     description: `Sunset contacted me to build a site to brand their new Daikin installations separately from their traditionally HVAC offerings. I built and designed this site for Sunset to market their Daikin products.`,
@@ -46,7 +41,6 @@ const projects = [
   },
 
   {
-    id: 5,
     projectName: 'Foster Kid\'s Christmas',
     projectType: 'PHP, Wordpress',
     description: `Christmas of 2017 a friend contacted me about an idea he had to make a website where we could have tags with wish lists of foster kid’s for Christmas. You can’t see the tags in this picture because it was a huge success and all of the kids had presents purchased for them!`,
@@ -54,7 +48,6 @@ const projects = [
     slug: 'foster-kids-christmas'
   },
   {
-    id: 6,
     projectName: 'Weatherific',
     projectType: 'JavaScript, React, API',
     description: `This is a website I built using React to get the local weather. It uses the Open Weather Map API, as well as Google's Geocode API.`,
@@ -63,7 +56,6 @@ const projects = [
     link: 'https://github.com/Doug-Luce/Weatherific'
   },
   {
-    id: 7,
     projectName: 'Grayscale App',
     projectType: 'Python, Tkinter',
     description: `I made this application with a couple classmates in a college programming class. It was our final, and we were pretty happy how it turned out. It reads in all of the pixel data into tuples, then changes each pixel based on grayscale algorithms. We also made a version with an installer.`,
@@ -72,7 +64,6 @@ const projects = [
     link: 'https://github.com/Doug-Luce/Grayscale'
   },
   {
-    id: 8,
     projectName: 'URL Shortener',
     projectType: 'Microservices',
     description: `I built this project to showcase my skills as a backend developer. It allows you to shorten a URL converting the link to a UID, then allows navigation to that UID when visited.`,
@@ -81,7 +72,6 @@ const projects = [
     link: 'https://github.com/Doug-Luce/FCC-URL-Shortener'
   },
   {
-    id: 9,
     projectName: 'Secret Santa',
     projectType: 'Meteor, Node, JavaScript, React',
     description: `This is a Meteor project I built to manager our family's Secret Santa gift exchange in 2017. At some point I would like to add more to this project and open source it.`,
@@ -90,7 +80,6 @@ const projects = [
     link: 'https://secret-santas-2017.herokuapp.com/'
   },
   {
-    id: 10,
     projectName: 'Score Keeper',
     projectType: 'Meteor, Node, JavaScript, React',
     description: `This is a score keeper application I built using MeteorJS and React. I learned a lot about Meteor building this application, and used the knowledge I learned buliding this application to build a Secret Santa app that our family used for Christmas.`,
@@ -99,7 +88,6 @@ const projects = [
     link: 'https://github.com/Doug-Luce/score-keeper'
   },
   {
-    id: 11,
     projectName: 'Adventure Time Quote Generator',
     projectType: 'JavaScript',
     description: `I built this web app on Codepen.io, it currently has over 3k views! I didn’t think that it would be as popular as it is, being such a simple project but it’s my most popular project. I’m going to move this to it’s own domain, as well as the custom API I built for it.`,
@@ -108,7 +96,6 @@ const projects = [
     link: 'https://github.com/Doug-Luce/Adventure-Time-Quote-Generator'
   },
   {
-    id: 12,
     projectName: 'Calculator',
     projectType: 'JavaScript, jQuery',
     description: `I was going after a retro look and feel when building this calculator. I had trouble getting this to work, but I kept on it until I ran out of bugs. It could certainly use a refactor, and I think I may make this into a React Native app.`,
@@ -117,7 +104,6 @@ const projects = [
     link: 'https://github.com/Doug-Luce/Calculator'
   },
   {
-    id: 13,
     projectName: 'Simon Says',
     projectType: 'JavaScript, React',
     description: `This project is Simon Says, but using a SNES controller. It plays the sounds from Super Mario World, and shows animations of the button presses as clicked. The game will playback a failed attempt so you can try again, or there is a strict mode that you have to enter all the steps perfectly, or fail.`,
@@ -126,7 +112,6 @@ const projects = [
     link: 'https://github.com/Doug-Luce/simon-says'
   },
   {
-    id: 14,
     projectName: 'Pomodoro Clock',
     projectType: 'React Web App',
     description: `I built this project to learn React during my study using the

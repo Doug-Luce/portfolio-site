@@ -12,9 +12,9 @@ import Project from './pages/Project';
 // The baseStyles() function is for giving a set of global css values.
 
 const App = (props) => {
-  baseStyles()
   return (
       <main>
+        <baseStyles />
         <NavBar />
           <Route path ="/" exact component={Home} />
           <Route path ="/about" component={About} />
