@@ -79,29 +79,25 @@ const TextArea = styled.textarea`
 
 `
 
-class ContactForm extends React.Component {
-  render () {
-    return (
-      <Container className="animated fadeIn">
-        <Label>Contact Me</Label>
-        <Copy>Interested in hiring me as a consultant, freelancer, or an employee? Fantastic! I would love to hear
+const ContactForm = () => (
+  <Container className="animated fadeIn">
+    <Label>Contact Me</Label>
+    <Copy>Interested in hiring me as a consultant, freelancer, or an employee? Fantastic! I would love to hear
           about your project or company, and would be more than happy to discuss it. Please leave a detailed message
-          and I'll get back to you as soon as I can. Thanks!
-        </Copy>
-        <Form name="contact" method="POST">
-          <input type="hidden" name="form-name" value="contact" />
-          <Label for="name">Name<sup>&#8902;</sup></Label>
-          <Input id="name" name="name" type="text" required placeholder="Your name&#8230;"></Input>
-          <Label for="email">E-Mail<sup>&#8902;</sup></Label>
-          <Input id="email" name="email" type="email" required placeholder="Your E-Mail&#8230; "></Input>
-          <Label for="message">Message</Label>
-          <TextArea id="message" name="message" type="text" placeholder="Your message for me&#8230; "></TextArea>
-          <SubmitButton>Submit</SubmitButton>
-        </Form>
+          and I&apos;ll get back to you as soon as I can. Thanks!
+    </Copy>
+    <Form name="contact" method="POST">
+      <input type="hidden" name="form-name" value="contact" />
+      <Label for="name">Name<sup>&#8902;</sup></Label>
+      <Input id="name" name="name" type="text" required placeholder="Your name&#8230;"></Input>
+      <Label for="email">E-Mail<sup>&#8902;</sup></Label>
+      <Input id="email" name="email" type="email" required placeholder="Your E-Mail&#8230; "></Input>
+      <Label for="message">Message</Label>
+      <TextArea id="message" name="message" type="text" placeholder="Your message for me&#8230; "></TextArea>
+      <SubmitButton>Submit</SubmitButton>
+    </Form>
 
-      </Container>
-    )
-  }
-}
+  </Container>
+)
 
 export default ContactForm

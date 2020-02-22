@@ -4,7 +4,6 @@ import ProjectNav from '../components/ProjectNav'
 import ProjectStyles from '../pages/styles/ProjectStyles'
 
 const ProjectPage = ({ props, goLeft, goRight }) => {
-  console.log(JSON.stringify(props))
   return (
     <ProjectStyles>
       <div className="project">

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import * as palette from './components/color'
 
-const baseStyles = createGlobalStyle`
+const BaseStyles = createGlobalStyle`
   * {
     @import url('https://fonts.googleapis.com/css?family=Jura');
     box-sizing: border-box;
@@ -27,4 +27,4 @@ const baseStyles = createGlobalStyle`
 }
 `
 
-export default baseStyles
+export default BaseStyles

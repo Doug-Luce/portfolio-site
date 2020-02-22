@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { H2 } from './typography'
+import PropTypes from 'prop-types'
 
 const Button = styled.button`
   background-repeat: no-repeat;
@@ -33,14 +34,22 @@ const Div = styled.div`
   }
 `
 
-const ProjectNav = (props) => (
+const ProjectNav = ({ projectName, goLeft, goRight }) => (
   <div>
     <Div>
-      <Button id="left-button" onClick={props.goLeft} />
-      <H2>{props.projectName}</H2>
-      <Button id="right-button" onClick={props.goRight} />
+      <Button id="left-button" onClick={goLeft} />
+      <H2>{projectName}</H2>
+      <Button id="right-button" onClick={goRight} />
     </Div>
   </div>
 )
+
+const { string, func } = PropTypes
+
+ProjectNav.propTypes = {
+  projectName: string,
+  goLeft: func,
+  goRight: func
+}
 
 export default ProjectNav

@@ -35,24 +35,20 @@ const Section = styled.section`
   width: 20rem;
 `
 
-class ContactCard extends React.Component {
-  render () {
-    return (
-      <Section className="animated fadeIn">
-        <Img src="https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_400/v1553559110/rsz_dl-hs-05_fabyuj.jpg"/>
-        <Bio>
-          <H2>Doug Luce</H2>
-          <H3>Dad, husband, Software Developer, and all around nice guy.
-          </H3>
-        </Bio>
-        <SocialStyles secondary><SocialButtons secondary/></SocialStyles>
-        <ContactInfo>
-          <a href="mailto:luce.douglas@gmail.com">luce.douglas@gmail.com</a>
-          <a href="tel:1-360-513-8325">360.513.8325</a>
-        </ContactInfo>
-      </Section>
-    )
-  }
-}
+const ContactCard = () => (
+  <Section className="animated fadeIn">
+    <Img src="https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_400/v1553559110/rsz_dl-hs-05_fabyuj.jpg"/>
+    <Bio>
+      <H2>Doug Luce</H2>
+      <H3>Dad, husband, Software Developer, and all around nice guy.
+      </H3>
+    </Bio>
+    <SocialStyles secondary><SocialButtons secondary/></SocialStyles>
+    <ContactInfo>
+      <a href="mailto:luce.douglas@gmail.com">luce.douglas@gmail.com</a>
+      <a href="tel:1-360-513-8325">360.513.8325</a>
+    </ContactInfo>
+  </Section>
+)
 
 export default ContactCard
