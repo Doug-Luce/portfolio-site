@@ -88,12 +88,12 @@ const ContactForm = () => (
     </Copy>
     <Form name="contact" method="POST">
       <input type="hidden" name="form-name" value="contact" />
-      <Label for="name">Name<sup>&#8902;</sup></Label>
-      <Input id="name" name="name" type="text" required placeholder="Your name&#8230;"></Input>
-      <Label for="email">E-Mail<sup>&#8902;</sup></Label>
-      <Input id="email" name="email" type="email" required placeholder="Your E-Mail&#8230; "></Input>
+      <Label for="name">Name</Label>
+      <Input id="name" name="name" type="text" required placeholder="Your name"></Input>
+      <Label for="email">E-Mail</Label>
+      <Input id="email" name="email" type="email" required placeholder="Your E-Mail"></Input>
       <Label for="message">Message</Label>
-      <TextArea id="message" name="message" type="text" placeholder="Your message for me&#8230; "></TextArea>
+      <TextArea id="message" name="message" type="text" placeholder="Your message for me"></TextArea>
       <SubmitButton>Submit</SubmitButton>
     </Form>
 

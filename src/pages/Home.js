@@ -3,6 +3,7 @@ import { H1, H2, P } from '../components/typography'
 import HomeStyles from './styles/HomeStyles'
 import styled from 'styled-components'
 import ContactButton from '../components/ContactButton'
+import PropTypes from 'prop-types'
 
 const Div = styled.div`
   display:flex;
@@ -15,9 +16,6 @@ const Div = styled.div`
     display: none;
     padding-top: 25px;
   }
-  /* @media (max-width: 400px) {
-    display: block;
-  } */
 
   @media (max-width: 768px) {
     align-items: center;
@@ -38,13 +36,13 @@ const Div = styled.div`
   }
 `
 
-const Home = (props) => (
+const Home = ({ history }) => (
   <HomeStyles className="home-page animated fadeIn">
     <Div>
       <div className="left">
         <H1>Hi,<br/>
-          I'm Doug,
-          I’m a Software
+          I&apos;m Doug,
+          I&apos;m a Software
           Developer.
         </H1>
         <H2>JavaScript, Node,
@@ -52,26 +50,24 @@ const Home = (props) => (
           more…
         </H2>
         <div className="home-contact">
-          <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
+          <ContactButton onClick={() => history.push('/contact')}>Contact Me</ContactButton>
         </div>
       </div>
       <div className="right">
-        <P> I’m currently employed as a Software
-            Developer, working on large scale products and
-            for the utility industry. I reside in the Phoenix, AZ
-            and I'm always up for helping with challenging technical
-            problems.
+        <P> I&apos;m a Phoenix-based technology evangelist with years in the industry including experience as a Fullstack developer. I have a proven track record of
         </P>
-        <P> With 13+ years in the IT industry, I bring a wealth of knowledge
-        of how technical systems work together. I currently have 5 years of
-        experience doing freelance web development, and a couple years of
-        experience working with a large team of developers. </P>
       </div>
       <div className="mobile-contact">
-        <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
+        <ContactButton onClick={() => history.push('/contact')}>Contact Me</ContactButton>
       </div>
     </Div>
   </HomeStyles>
 )
+
+const { object } = PropTypes
+
+Home.propTypes = {
+  history: object
+}
 
 export default Home

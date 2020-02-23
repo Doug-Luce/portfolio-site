@@ -2,12 +2,13 @@ import React from 'react'
 import { H2, H3, P } from '../components/typography'
 import AboutStyles from './styles/AboutStyles'
 import ContactButton from '../components/ContactButton'
+import PropTypes from 'prop-types'
 
-const About = (props) => (
+const About = ({ history }) => (
   <AboutStyles className="about-page">
     <div className="row top-row">
       <div>
-        <H2>Hello, my name is <span>Doug</span>.<br /> I'm a Software Developer<br /> living in Phoenix, AZ.</H2>
+        <H2>Hello, my name is <span>Doug</span>.<br /> I&apos;m a Software Developer<br /> living in Phoenix, AZ.</H2>
       </div>
       <div className="portrait animated flipInX">
         <img alt="round self portrait of Doug Luce" className="column portrait" src="https://res.cloudinary.com/lucedesign/image/upload/v1529958549/Portrait_nrffzr.png" />
@@ -30,8 +31,8 @@ const About = (props) => (
         <H3>Education:</H3>
       </div>
       <div>
-        <P><strong>Western Governor's University</strong> - Bachelor's Degree, Software Development (In Progress)</P>
-        <P><strong>Clark College</strong> - Associate's Degree, Information Technology</P>
+        <P><strong>Western Governor&apos;s University</strong> - Bachelor&apos;s Degree, Software Development (In Progress)</P>
+        <P><strong>Clark College</strong> - Associate&apos;s Degree, Information Technology</P>
         <P><strong>Tongue Point, Vocational Training</strong> - Computer and Information Sciences and Support Services.</P>
       </div>
     </div>
@@ -42,14 +43,19 @@ const About = (props) => (
       <div>
         <ul className="position-one"><li><strong>Software Developer</strong></li><li>KUBRA</li><li>Sep 2018 - Present</li></ul>
         <ul className="position-one"><li><strong>IT Manager</strong></li><li>Entercom Portland</li><li>Nov 2015 - Sep 2018</li></ul>
-        <ul><li><strong>Computer Support Specialist</strong></li><li>Vivageek</li><li>Nov 2007 - Oct 2015</li></ul>
       </div>
     </div>
     <div className="row interest">
       <P className="interested"><strong>Interested in working with me?</strong></P>
     </div>
-    <ContactButton onClick={() => props.history.push('/contact')}>Contact Me</ContactButton>
+    <ContactButton onClick={() => history.push('/contact')}>Contact Me</ContactButton>
   </AboutStyles>
 )
+
+const { object } = PropTypes
+
+About.propTypes = {
+  history: object
+}
 
 export default About

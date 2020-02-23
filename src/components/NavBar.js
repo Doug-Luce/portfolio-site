@@ -33,7 +33,7 @@ const NavBar = () => {
       <NavLinks />
       <ChatButton />
       {/* Pass the Hamburger component the toggle state and the click handler */}
-      <Hamburger toggle={isSideBarOpen} onClick={() => setSidebarOpen(!isSideBarOpen)} />
+      <Hamburger isSidebarOpen={isSideBarOpen} setSidebarOpen={() => setSidebarOpen(!isSideBarOpen)} />
       {/* This will conditionally render the slideout menu based on the toggle */}
       {menu}
     </NavStyles>

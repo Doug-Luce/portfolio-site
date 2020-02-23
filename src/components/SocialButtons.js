@@ -1,22 +1,33 @@
 import React from 'react'
+import imageLocations from '../imageLocations'
 
 export const SocialButtons = (props) => {
+  const {
+    githubIcon,
+    githubCreamIcon,
+    codepenIcon,
+    codepenCreamIcon,
+    linkedinIcon,
+    linkedinCreamIcon,
+    facebookIcon,
+    facebookCreamIcon
+  } = imageLocations
   if (!props.secondary) {
     return (
       <ul className="social-buttons">
-        <li><a href="https://github.com/doug-luce"><img alt="github icon" src="https://res.cloudinary.com/lucedesign/image/upload/v1529890492/github_tv3k9q.svg" /></a></li>
-        <li><a href="https://codepen.io/douglasluce/"><img alt="codepen icon" src="https://res.cloudinary.com/lucedesign/image/upload/v1529890492/codepen_lllqlx.svg" /></a></li>
-        <li><a href="https://www.linkedin.com/in/douglasluce/"><img alt="linkedin icon" src="https://res.cloudinary.com/lucedesign/image/upload/v1529890493/linkedin_kwu5cp.svg" /></a></li>
-        <li><a href="https://www.facebook.com/luce.douglas"><img alt="facebook icon" src="https://res.cloudinary.com/lucedesign/image/upload/v1529890492/facebook_dziygf.svg" /></a></li>
+        <li><a href="https://github.com/doug-luce"><img alt="github icon" src={githubIcon} /></a></li>
+        <li><a href="https://codepen.io/douglasluce/"><img alt="codepen icon" src={codepenIcon} /></a></li>
+        <li><a href="https://www.linkedin.com/in/douglasluce/"><img alt="linkedin icon" src={linkedinIcon} /></a></li>
+        <li><a href="https://www.facebook.com/luce.douglas"><img alt="facebook icon" src={facebookIcon} /></a></li>
       </ul>
     )
   } else {
     return (
       <ul className="social-buttons">
-        <li><a href="https://github.com/doug-luce"><img alt="github icon" src="https://res.cloudinary.com/lucedesign/image/upload/v1530114360/githubCream_af73w6.svg" /></a></li>
-        <li><a href="https://codepen.io/douglasluce/"><img alt="codepen icon" src="https://res.cloudinary.com/lucedesign/image/upload/v1530114360/codepenCream_ta5uh6.svg" /></a></li>
-        <li><a href="https://www.linkedin.com/in/douglasluce/"><img alt="linkedin icon" src="https://res.cloudinary.com/lucedesign/image/upload/v1530114361/linkedinCream_dllgv4.svg" /></a></li>
-        <li><a href="https://www.facebook.com/luce.douglas"><img alt="facebook icon" src="https://res.cloudinary.com/lucedesign/image/upload/v1530114360/facebookCream_qfm7zg.svg" /></a></li>
+        <li><a href="https://github.com/doug-luce"><img alt="github icon" src={githubCreamIcon} /></a></li>
+        <li><a href="https://codepen.io/douglasluce/"><img alt="codepen icon" src={codepenCreamIcon} /></a></li>
+        <li><a href="https://www.linkedin.com/in/douglasluce/"><img alt="linkedin icon" src={linkedinCreamIcon} /></a></li>
+        <li><a href="https://www.facebook.com/luce.douglas"><img alt="facebook icon" src={facebookCreamIcon} /></a></li>
       </ul>
     )
   }

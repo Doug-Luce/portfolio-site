@@ -11,7 +11,7 @@ import Project from './pages/Project'
 // App renders the Mainlayout component inside of a Router component.
 // The BaseStyles() function is for giving a set of global css values.
 
-const App = (props) => {
+const App = () => {
   return (
     <main>
       <BaseStyles />

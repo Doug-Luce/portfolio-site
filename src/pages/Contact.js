@@ -19,7 +19,7 @@ const Div = styled.section`
   }
 `
 
-const Contact = (props) => (
+const Contact = () => (
   <Div>
     <ContactCard />
     <ContactForm />

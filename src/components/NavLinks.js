@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 // exact={true} is to match the root path exactly to get
 // the active class.
 
-export const NavLinks = () => {
+const NavLinks = () => {
   return (
     <ul className="nav-links">
       <li>

@@ -20,6 +20,7 @@ const ProjectStyles = styled.section`
   .project {
     max-width: 50rem;
     padding-right: 5rem;
+    min-height: 30rem;
   }
 
   .project-copy {
