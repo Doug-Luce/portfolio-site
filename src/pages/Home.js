@@ -28,10 +28,13 @@ const Div = styled.div`
     .home-contact {
       display:none;
     }
+    .left h1 {
+      font-size: 3rem;
+    }
     .mobile-contact {
       display: flex;
-    align-items: center;
-    justify-content: center;
+      align-items: center;
+      justify-content: center;
     }
   }
 `
@@ -40,21 +43,20 @@ const Home = ({ history }) => (
   <HomeStyles className="home-page animated fadeIn">
     <Div>
       <div className="left">
-        <H1>Hi,<br/>
-          I&apos;m Doug,
-          I&apos;m a Software
-          Developer.
+        <H1>Hi, I&apos;m Doug, <br /> I&apos;m a Fullstack Developer.
         </H1>
-        <H2>JavaScript, Node,
-          React, Meteor, SQL, MongoDB,
-          more…
+        <H2>JavaScript, Node, React,
+          Java, Spring, MySQL, AWS,
+          and more…
         </H2>
         <div className="home-contact">
           <ContactButton onClick={() => history.push('/contact')}>Contact Me</ContactButton>
         </div>
       </div>
       <div className="right">
-        <P> I&apos;m a Phoenix-based technology evangelist with years in the industry including experience as a Fullstack developer. I have a proven track record of
+        <P> Based in Phoenix, Arizona. A skilled fullstack developer eager about building excellent software and improving my craft. Experience building large SaaS products that reach millions of users with mission-critical applications.
+        </P>
+        <P> Passionate about building fast, fluid UI experiences that are user-focused and accessible. Just as passionate about software design and building rigorously tested microservices.
         </P>
       </div>
       <div className="mobile-contact">

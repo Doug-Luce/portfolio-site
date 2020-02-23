@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import NavStyles from './styles/NavStyles'
 import NavLinks from './NavLinks'
+// eslint-disable-next-line no-unused-vars
 import ChatButton from './ChatButton'
 import Hamburger from './Hamburger'
 import Menu from './styles/MenuStyles'
@@ -29,9 +30,9 @@ const NavBar = () => {
   }
   return (
     <NavStyles>
-      <h4><a id="logo" href="/">Douglas Luce <br />Software Developer</a></h4>
+      <h4><a id="logo" href="/">Douglas Luce <br />Fullstack Developer</a></h4>
       <NavLinks />
-      <ChatButton />
+      {/* <ChatButton /> */}
       {/* Pass the Hamburger component the toggle state and the click handler */}
       <Hamburger isSidebarOpen={isSideBarOpen} setSidebarOpen={() => setSidebarOpen(!isSideBarOpen)} />
       {/* This will conditionally render the slideout menu based on the toggle */}

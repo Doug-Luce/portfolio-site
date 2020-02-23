@@ -40,7 +40,7 @@ const ContactCard = () => (
     <Img src="https://res.cloudinary.com/lucedesign/image/upload/c_scale,q_auto:good,w_400/v1553559110/rsz_dl-hs-05_fabyuj.jpg"/>
     <Bio>
       <H2>Doug Luce</H2>
-      <H3>Dad, husband, Software Developer, and all around nice guy.
+      <H3>Dad, husband, Software Developer, and all around nice person.
       </H3>
     </Bio>
     <SocialStyles secondary><SocialButtons secondary/></SocialStyles>

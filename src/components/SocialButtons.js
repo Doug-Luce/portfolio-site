@@ -5,8 +5,6 @@ export const SocialButtons = (props) => {
   const {
     githubIcon,
     githubCreamIcon,
-    codepenIcon,
-    codepenCreamIcon,
     linkedinIcon,
     linkedinCreamIcon,
     facebookIcon,
@@ -16,16 +14,14 @@ export const SocialButtons = (props) => {
     return (
       <ul className="social-buttons">
         <li><a href="https://github.com/doug-luce"><img alt="github icon" src={githubIcon} /></a></li>
-        <li><a href="https://codepen.io/douglasluce/"><img alt="codepen icon" src={codepenIcon} /></a></li>
         <li><a href="https://www.linkedin.com/in/douglasluce/"><img alt="linkedin icon" src={linkedinIcon} /></a></li>
         <li><a href="https://www.facebook.com/luce.douglas"><img alt="facebook icon" src={facebookIcon} /></a></li>
       </ul>
     )
   } else {
     return (
-      <ul className="social-buttons">
+      <ul className="social-buttons social-buttons-contact">
         <li><a href="https://github.com/doug-luce"><img alt="github icon" src={githubCreamIcon} /></a></li>
-        <li><a href="https://codepen.io/douglasluce/"><img alt="codepen icon" src={codepenCreamIcon} /></a></li>
         <li><a href="https://www.linkedin.com/in/douglasluce/"><img alt="linkedin icon" src={linkedinCreamIcon} /></a></li>
         <li><a href="https://www.facebook.com/luce.douglas"><img alt="facebook icon" src={facebookCreamIcon} /></a></li>
       </ul>
