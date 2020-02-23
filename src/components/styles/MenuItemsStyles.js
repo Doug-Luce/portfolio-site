@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import * as palette from '../color';
+import styled from 'styled-components'
+import * as palette from '../color'
 
 const MenuItemStyle = styled.div`
     color: ${palette.lightCream};
@@ -48,6 +48,6 @@ const MenuItemStyle = styled.div`
       background-size: 1.3em;
       padding-left: 15px;
     }
-`;
+`
 
-export default MenuItemStyle;
+export default MenuItemStyle

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const HomeStyles = styled.div`
   .left {
@@ -42,6 +42,5 @@ const HomeStyles = styled.div`
       font-size: 18px;
     }
   }
-`;
-export default HomeStyles;
-
+`
+export default HomeStyles

@@ -1,7 +1,7 @@
-import { injectGlobal } from 'styled-components';
-import * as palette from './components/color';
+import { createGlobalStyle } from 'styled-components'
+import * as palette from './components/color'
 
-const baseStyles = () => injectGlobal`
+const BaseStyles = createGlobalStyle`
   * {
     @import url('https://fonts.googleapis.com/css?family=Jura');
     box-sizing: border-box;
@@ -25,6 +25,6 @@ const baseStyles = () => injectGlobal`
     display: none;
   }
 }
-`;
+`
 
-export default baseStyles;
+export default BaseStyles

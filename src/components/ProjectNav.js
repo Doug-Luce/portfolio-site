@@ -1,13 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import { H2 } from './typography';
+import React from 'react'
+import styled from 'styled-components'
+import { H2 } from './typography'
+import PropTypes from 'prop-types'
 
 const Button = styled.button`
   background-repeat: no-repeat;
   background-color: transparent;
   border-color: transparent;
   padding: 1.3rem;
-`;
+`
 
 const Div = styled.div`
   align-items: center;
@@ -31,17 +32,24 @@ const Div = styled.div`
       min-width: 250px;
     }
   }
-`;
+`
 
-
-const ProjectNav = (props) => (
+const ProjectNav = ({ projectName, goLeft, goRight }) => (
   <div>
     <Div>
-      <Button id="left-button" onClick={props.goLeft} />
-      <H2>{props.projectName}</H2>
-      <Button id="right-button" onClick={props.goRight} />
+      <Button id="left-button" onClick={goLeft} />
+      <H2>{projectName}</H2>
+      <Button id="right-button" onClick={goRight} />
     </Div>
   </div>
-);
+)
 
-export default ProjectNav;
+const { string, func } = PropTypes
+
+ProjectNav.propTypes = {
+  projectName: string,
+  goLeft: func,
+  goRight: func
+}
+
+export default ProjectNav

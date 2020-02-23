@@ -1,7 +1,7 @@
-import React from "react";
-import ContactCard from '../components/ContactCard';
-import ContactForm from '../components/ContactForm';
-import styled from 'styled-components';
+import React from 'react'
+import ContactCard from '../components/ContactCard'
+import ContactForm from '../components/ContactForm'
+import styled from 'styled-components'
 
 const Div = styled.section`
   display:flex;
@@ -17,13 +17,13 @@ const Div = styled.section`
       margin-bottom: 4rem;
     }
   }
-`;
+`
 
-const Contact = (props) => (
+const Contact = () => (
   <Div>
     <ContactCard />
     <ContactForm />
   </Div>
-);
+)
 
-export default Contact;
+export default Contact

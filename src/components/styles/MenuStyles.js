@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import * as palette from '../color';
+import styled from 'styled-components'
+import * as palette from '../color'
 
 const Menu = styled.div`
   background-color: ${palette.lightBlue};
@@ -12,6 +12,6 @@ const Menu = styled.div`
   transform: ${props => props.toggle ? 'translate3d(-20vw, 0, 0);' : 'translate3d(-110vw, 0, 0);'};
   width: 100vw;
   z-index: 1;
-`;
+`
 
-export default Menu;
+export default Menu
